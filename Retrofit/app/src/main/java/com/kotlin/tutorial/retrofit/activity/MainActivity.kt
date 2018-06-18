@@ -2,6 +2,7 @@ package com.kotlin.tutorial.retrofit.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.kotlin.tutorial.retrofit.R
 
 class MainActivity : AppCompatActivity() {
 

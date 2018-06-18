@@ -19,6 +19,8 @@ ext {
 
             retrofit                  : "2.3.0",
 
+            gson                      : "2.8.1",
+
             saf_log                   : "1.5.3",
             saf_logginginterceptor    : "1.2.0",
 

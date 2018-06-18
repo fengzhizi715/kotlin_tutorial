@@ -3,9 +3,11 @@ package com.kotlin.tutorial.retrofit.http
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
+import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 import com.safframework.http.interceptor.LoggingInterceptor
 import com.kotlin.tutorial.retrofit.api.APIService
+
 import kotlin.jvm.java
 
 /**

@@ -1,8 +1,9 @@
 package com.kotlin.tutorial.retrofit.api
 
 import io.reactivex.Maybe
-import retrofit2.http.Body
-import retrofit2.http.POST
+import retrofit2.http.GET
+import retrofit2.http.Path
+import com.kotlin.tutorial.retrofit.domain.TopModel
 
 /**
  *
@@ -16,9 +17,9 @@ interface APIService {
 
     companion object {
 
-        const val API_BASE_SERVER_URL = "https://www.reddit.com/"
+        const val API_BASE_SERVER_URL = "https://api.github.com/"
     }
 
-//    @POST("session/init")
-//    fun sessionInit(@Body param: SessionInitParam): Maybe<SessionInitModel>
+    @GET("users/:username/events/public")
+    fun top(@Path("username")userName:String): Maybe<TopModel>
 }
