@@ -1,4 +1,4 @@
-package com.kotlin.tutorial.retrofit
+package com.kotlin.tutorial.retrofit.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
