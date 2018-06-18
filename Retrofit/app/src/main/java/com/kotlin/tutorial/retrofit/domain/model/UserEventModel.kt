@@ -2,6 +2,7 @@ package com.kotlin.tutorial.retrofit.domain.model
 
 import android.support.v7.app.AppCompatActivity
 import com.kotlin.tutorial.retrofit.http.RetrofitManager
+import com.safframework.lifecycle.RxLifecycle
 import com.safframework.utils.RxJavaUtils
 import io.reactivex.Maybe
 import java.io.Serializable
@@ -14,20 +15,6 @@ import java.io.Serializable
  * @date: 2018-06-18 21:21
  * @version V1.0 <描述当前版本功能>
  */
-//data class UserEventModel(var data: List<Event>?) : Serializable {
-//
-//    constructor() : this(null)
-//
-//
-//    fun publicEvent(activity: AppCompatActivity, userName: String): Maybe<List<UserEventModel>> {
-//
-//        return RetrofitManager.get().apiService()
-//                .publicEvent(userName)
-////                .compose(RxLifecycle.bind(activity).toLifecycleTransformer())
-//                .compose(RxJavaUtils.maybeToMain())
-//    }
-//}
-
 data class Event(var id: String,
                  var type: String,
                  var actor: Actor,
@@ -68,6 +55,6 @@ fun publicEvent(activity: AppCompatActivity, userName: String): Maybe<List<Event
 
     return RetrofitManager.get().apiService()
             .publicEvent(userName)
-//                .compose(RxLifecycle.bind(activity).toLifecycleTransformer())
+            .compose(RxLifecycle.bind(activity).toLifecycleTransformer())
             .compose(RxJavaUtils.maybeToMain())
 }

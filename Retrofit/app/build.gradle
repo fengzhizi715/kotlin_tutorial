@@ -40,9 +40,11 @@ dependencies {
 
     implementation "com.squareup.retrofit2:retrofit:${libs.retrofit}"
     implementation "com.squareup.retrofit2:adapter-rxjava2:${libs.retrofit}"
-    api "com.squareup.retrofit2:converter-gson:$libs.retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$libs.retrofit"
 
-    api "com.google.code.gson:gson:$libs.gson"
+    implementation "com.google.code.gson:gson:$libs.gson"
+
+    implementation 'com.safframework:saf-rxlifecycle:1.1.2'
 
     implementation "com.safframework.log:saf-logginginterceptor:${libs.saf_logginginterceptor}"
 
