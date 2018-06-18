@@ -1,10 +1,5 @@
 package com.kotlin.tutorial.retrofit.domain.model
 
-import android.support.v7.app.AppCompatActivity
-import com.kotlin.tutorial.retrofit.http.RetrofitManager
-import com.safframework.lifecycle.RxLifecycle
-import com.safframework.utils.RxJavaUtils
-import io.reactivex.Maybe
 import java.io.Serializable
 
 /**
@@ -50,11 +45,3 @@ data class Commit(var sha: String,
 
 data class Author(var email:String,
                   var name:String) : Serializable
-
-fun publicEvent(activity: AppCompatActivity, userName: String): Maybe<List<Event>> {
-
-    return RetrofitManager.get().apiService()
-            .publicEvent(userName)
-            .compose(RxLifecycle.bind(activity).toLifecycleTransformer())
-            .compose(RxJavaUtils.maybeToMain())
-}
