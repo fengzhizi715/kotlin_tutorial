@@ -33,13 +33,19 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+    implementation "io.reactivex.rxjava2:rxandroid:${libs.rxandroid}"
+    implementation "io.reactivex.rxjava2:rxjava:${libs.rxjava}"
 
     implementation "com.squareup.retrofit2:retrofit:${libs.retrofit}"
     implementation "com.squareup.retrofit2:adapter-rxjava2:${libs.retrofit}"
     api "com.squareup.retrofit2:converter-gson:$libs.retrofit"
+
     api "com.google.code.gson:gson:$libs.gson"
 
     implementation "com.safframework.log:saf-logginginterceptor:${libs.saf_logginginterceptor}"
 
-
+    implementation "com.safframework.utils:saf-kotlin-ext:${libs.saf_kotlin_ext}"
+    implementation "com.safframework.utils:saf-kotlin-utils:${libs.saf_kotlin_utils}"
 }
