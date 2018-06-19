@@ -1,4 +1,4 @@
-package com.kotlin.tutorial.retrofit.domain.model
+package com.kotlin.tutorial.retrofit.app1.model
 
 import java.io.Serializable
 

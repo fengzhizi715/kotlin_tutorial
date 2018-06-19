@@ -1,9 +1,10 @@
-package com.kotlin.tutorial.retrofit.activity
+package com.kotlin.tutorial.retrofit.app1.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.kotlin.tutorial.retrofit.R
-import com.kotlin.tutorial.retrofit.http.RetrofitManager
+import com.kotlin.tutorial.retrofit.app1.R
+
+import com.kotlin.tutorial.retrofit.app1.http.RetrofitManager
 import com.safframework.lifecycle.RxLifecycle
 import com.safframework.utils.RxJavaUtils
 

@@ -1,11 +1,11 @@
-package com.kotlin.tutorial.retrofit.http
+package com.kotlin.tutorial.retrofit.app1.http
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import java.util.concurrent.TimeUnit
 import com.safframework.http.interceptor.LoggingInterceptor
-import com.kotlin.tutorial.retrofit.api.APIService
+import com.kotlin.tutorial.retrofit.app1.api.APIService
 import retrofit2.converter.gson.GsonConverterFactory
 
 import kotlin.jvm.java
@@ -13,7 +13,7 @@ import kotlin.jvm.java
 /**
  *
  * @FileName:
- *          com.kotlin.tutorial.retrofit.http.RetrofitManager.java
+ *          com.kotlin.tutorial.retrofit.app1.http.RetrofitManager.java
  * @author: Tony Shen
  * @date: 2018-06-18 19:19
  * @version V1.0 <描述当前版本功能>

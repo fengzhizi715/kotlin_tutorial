@@ -1,6 +1,6 @@
-package com.kotlin.tutorial.retrofit.api
+package com.kotlin.tutorial.retrofit.app1.api
 
-import com.kotlin.tutorial.retrofit.domain.model.Event
+import com.kotlin.tutorial.retrofit.app1.model.Event
 import io.reactivex.Maybe
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -8,7 +8,7 @@ import retrofit2.http.Path
 /**
  *
  * @FileName:
- *          com.kotlin.tutorial.retrofit.api.APIService.java
+ *          com.kotlin.tutorial.retrofit.app1.api.APIService.java
  * @author: Tony Shen
  * @date: 2018-06-18 19:28
  * @version V1.0 <描述当前版本功能>

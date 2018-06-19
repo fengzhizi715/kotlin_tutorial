@@ -9,7 +9,7 @@ android {
 
     compileSdkVersion cfg.compileVersion
     defaultConfig {
-        applicationId "com.kotlin.tutorial.retrofit"
+        applicationId "com.kotlin.tutorial.retrofit.app1"
         minSdkVersion cfg.minSdk
         targetSdkVersion cfg.targetSdk
         versionCode 1
