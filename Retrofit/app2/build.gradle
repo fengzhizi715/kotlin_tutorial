@@ -1,4 +1,9 @@
-apply plugin: 'com.android.library'
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+def cfg = rootProject.ext.configuration // 配置
+def libs = rootProject.ext.libraries // 库
 
 android {
     compileSdkVersion 27
@@ -6,6 +11,7 @@ android {
 
 
     defaultConfig {
+        applicationId "com.kotlin.tutorial.retrofit.app2"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
@@ -31,4 +37,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }
