@@ -12,10 +12,10 @@ import com.kotlin.tutorial.retrofit.app2.model.PM25Model
 import io.reactivex.Maybe
 
 import com.safframework.utils.RxJavaUtils
-import android.widget.TextView
 import com.kotlin.tutorial.retrofit.app2.config.Constant
 import com.safframework.tony.common.utils.Preconditions
 import io.reactivex.functions.Function3
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 /**
@@ -27,20 +27,6 @@ import io.reactivex.functions.Function3
  * @version V1.0 <描述当前版本功能>
  */
 class MainActivity : AppCompatActivity() {
-
-    lateinit var quality: TextView
-
-    lateinit var pm2_5: TextView
-
-    lateinit var pm2_5_24h: TextView
-
-    lateinit var pm10: TextView
-
-    lateinit var pm10_24h: TextView
-
-    lateinit var so2: TextView
-
-    lateinit var so2_24h: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,7 +58,6 @@ class MainActivity : AppCompatActivity() {
 
                     null
                 }
-
 
         val pm10Maybe = apiService.pm10(Constant.CITY_ID, Constant.TOKEN)
                 .compose(RxJavaUtils.maybeToMain<List<PM10Model>>())
@@ -115,7 +100,6 @@ class MainActivity : AppCompatActivity() {
                     null
                 }
 
-
         // 合并多个网络请求
         Maybe.zip(pm25Maybe, pm10Maybe, so2Maybe, Function3<PM25Model, PM10Model, SO2Model, ZipObject> { pm25Model, pm10Model, so2Model ->
 
@@ -127,6 +111,7 @@ class MainActivity : AppCompatActivity() {
                     so2Model.so2,
                     so2Model.so2_24h)
         }).subscribe({
+
             quality.setText("空气质量指数：" + it.pm2_5_quality)
             pm2_5.setText("PM2.5 1小时内平均：" + it.pm2_5)
             pm2_5_24h.setText("PM2.5 24小时滑动平均：" + it.pm2_5_24h)
@@ -137,6 +122,7 @@ class MainActivity : AppCompatActivity() {
             so2.setText("二氧化硫1小时平均：" + it.so2)
             so2_24h.setText("二氧化硫24小时滑动平均：" + it.so2_24h)
         }, {
+
             println(it.message)
         })
     }
