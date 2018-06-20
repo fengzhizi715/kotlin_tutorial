@@ -19,7 +19,7 @@ ext {
             gson                      : "2.8.1",
 
             saf_log                   : "1.5.3",
-            saf_logginginterceptor    : "1.2.0",
+            saf_logginginterceptor    : "1.2.1",
             saf_kotlin_utils          : "0.0.4.5",
             saf_kotlin_ext            : "0.0.3.4",
 
