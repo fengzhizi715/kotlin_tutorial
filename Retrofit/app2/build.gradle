@@ -6,14 +6,14 @@ def cfg = rootProject.ext.configuration // 配置
 def libs = rootProject.ext.libraries // 库
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion cfg.compileVersion
 
 
 
     defaultConfig {
         applicationId "com.kotlin.tutorial.retrofit.app2"
-        minSdkVersion 15
-        targetSdkVersion 27
+        minSdkVersion cfg.minSdk
+        targetSdkVersion cfg.targetSdk
         versionCode 1
         versionName "1.0"
 
@@ -38,7 +38,26 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+    implementation "io.reactivex.rxjava2:rxandroid:${libs.rxandroid}"
+    implementation "io.reactivex.rxjava2:rxjava:${libs.rxjava}"
+
+    implementation "com.squareup.retrofit2:retrofit:${libs.retrofit}"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:${libs.retrofit}"
+    implementation "com.squareup.retrofit2:converter-gson:$libs.retrofit"
+
+    implementation "com.google.code.gson:gson:$libs.gson"
+
+    implementation 'com.safframework:saf-rxlifecycle:1.1.2'
+
+    implementation "com.safframework.log:saf-logginginterceptor:${libs.saf_logginginterceptor}"
+
+    implementation "com.safframework.utils:saf-kotlin-ext:${libs.saf_kotlin_ext}"
+    implementation "com.safframework.utils:saf-kotlin-utils:${libs.saf_kotlin_utils}"
+    implementation "tony-common:tony-common-utils:${libs.tony_common_utils}"
 }
-repositories {
-    mavenCentral()
-}
+
