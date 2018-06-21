@@ -3,6 +3,7 @@ package com.kotlin.tutorial.retrofit.app2.activity
 import android.os.Bundle
 
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import com.kotlin.tutorial.retrofit.app2.R
 import com.kotlin.tutorial.retrofit.app2.http.RetrofitManager
 import com.kotlin.tutorial.retrofit.app2.model.ZipObject
@@ -56,7 +57,7 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
 
-                    null
+                    Maybe.empty<PM25Model>()
                 }
 
         val pm10Maybe = apiService.pm10(Constant.CITY_ID, Constant.TOKEN)
@@ -76,8 +77,7 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
 
-                    null
-
+                    Maybe.empty<PM10Model>()
                 }
 
         val so2Maybe = apiService.so2(Constant.CITY_ID, Constant.TOKEN)
@@ -97,8 +97,9 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
 
-                    null
+                    Maybe.empty<SO2Model>()
                 }
+
 
         // 合并多个网络请求
         Maybe.zip(pm25Maybe, pm10Maybe, so2Maybe, Function3<PM25Model, PM10Model, SO2Model, ZipObject> { pm25Model, pm10Model, so2Model ->
@@ -110,6 +111,7 @@ class MainActivity : AppCompatActivity() {
                     pm10Model.pm10_24h,
                     so2Model.so2,
                     so2Model.so2_24h)
+
         }).subscribe({
 
             quality.setText("空气质量指数：" + it.pm2_5_quality)
