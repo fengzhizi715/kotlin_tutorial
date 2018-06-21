@@ -14,9 +14,6 @@ data class ZipObject(
         var pm2_5: Int,
         var pm2_5_24h: Int,
 
-        var pm10: Int,
-        var pm10_24h: Int,
-
         var so2: Int,
         var so2_24h: Int
 )

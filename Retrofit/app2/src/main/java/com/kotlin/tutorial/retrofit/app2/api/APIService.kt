@@ -1,6 +1,5 @@
 package com.kotlin.tutorial.retrofit.app2.api
 
-import com.kotlin.tutorial.retrofit.app2.model.PM10Model
 import com.kotlin.tutorial.retrofit.app2.model.PM25Model
 import com.kotlin.tutorial.retrofit.app2.model.SO2Model
 import io.reactivex.Maybe
@@ -24,9 +23,6 @@ interface APIService {
 
     @GET("api/querys/pm2_5.json")
     fun pm25(@Query("city") cityId: String, @Query("token") token: String): Maybe<List<PM25Model>>
-
-    @GET("api/querys/pm10.json")
-    fun pm10(@Query("city") cityId: String, @Query("token") token: String): Maybe<List<PM10Model>>
 
     @GET("api/querys/so2.json")
     fun so2(@Query("city") cityId: String, @Query("token") token: String): Maybe<List<SO2Model>>
