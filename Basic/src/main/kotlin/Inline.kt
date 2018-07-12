@@ -1,5 +1,3 @@
-import java.io.Closeable
-
 /**
  * Created by tony on 2018/7/4.
  */
