@@ -1,7 +1,7 @@
 /**
  * Created by tony on 2018/6/4.
  */
-class TestInfix {
+class Infix2 {
 
     infix fun add(i: Int):Int {
 
@@ -17,7 +17,7 @@ class TestInfix {
 
 fun main(args: Array<String>) {
 
-    var testInfix = TestInfix()
+    var infix2 = Infix2()
 
-    testInfix.printValue()
+    infix2.printValue()
 }
