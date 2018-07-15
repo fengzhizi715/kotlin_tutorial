@@ -18,7 +18,7 @@ Basic是Java工程，使用IntelliJ Idea打开。
 ## 实战篇
 
 ### 实战篇2-4小节
-Retrofit是Android工程，使用IntelliJ Idea打开。
+Retrofit是Android工程，使用Android Studio打开。
 
 # 开发工具
 
