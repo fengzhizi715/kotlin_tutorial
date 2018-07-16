@@ -37,7 +37,9 @@ Basic是Java工程，使用IntelliJ Idea打开。
 
 ### 委托、运算符重载以及中缀表达式
 
-
+* Lazy.kt
+* Infix1.kt
+* Infix2.kt
 
 
 ## 实战篇
