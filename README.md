@@ -15,6 +15,14 @@ Basic是Java工程，使用IntelliJ Idea打开。
 ## 进阶篇
 Basic是Java工程，使用IntelliJ Idea打开。
 
+### 高阶函数和Lambda表达式
+
+HigherOrderFunctions1.kt
+HigherOrderFunctions2.kt
+HigherOrderFunctions3.kt
+Lambda.kt
+MethodReference.kt
+
 ## 实战篇
 
 ### 实战篇2-4小节
