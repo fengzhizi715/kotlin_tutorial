@@ -23,6 +23,23 @@ Basic是Java工程，使用IntelliJ Idea打开。
 * Lambda.kt
 * MethodReference.kt
 
+### 内联函数和内联属性
+
+* Inline.kt
+* Noinline.kt
+
+### 扩展函数和扩展属性
+
+* Extension1.kt
+* Extension2.kt
+* Extension3.kt
+* Polymorphism.kt
+
+### 委托、运算符重载以及中缀表达式
+
+
+
+
 ## 实战篇
 
 ### 实战篇2-4小节
