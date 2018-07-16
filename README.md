@@ -22,6 +22,7 @@ Basic是Java工程，使用IntelliJ Idea打开。
 * HigherOrderFunctions3.kt
 * Lambda.kt
 * MethodReference.kt
+* SAM.kt
 
 ### 内联函数和内联属性
 
@@ -41,8 +42,6 @@ Basic是Java工程，使用IntelliJ Idea打开。
 * Infix1.kt
 * Infix2.kt
 * Invoke.kt
-* SAM.kt
-
 
 ## 实战篇
 
