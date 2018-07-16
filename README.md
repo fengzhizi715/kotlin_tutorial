@@ -40,6 +40,8 @@ Basic是Java工程，使用IntelliJ Idea打开。
 * Lazy.kt
 * Infix1.kt
 * Infix2.kt
+* Invoke.kt
+* SAM.kt
 
 
 ## 实战篇
