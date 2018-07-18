@@ -52,7 +52,7 @@ Retrofit是Android工程，使用Android Studio打开。
 
 Android的工程采用Android Studio3.1开发，gradle版本是4.1。
 
-Java的工程采用Intellij IDEA社区版开发。
+Java的工程采用Intellij IDEA 2018.1.6 社区版开发。
 
 
 # 联系方式:
