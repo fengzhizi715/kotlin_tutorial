@@ -27,6 +27,8 @@ class RetrofitManager private constructor() {
     init {
 
         val builder = OkHttpClient.Builder()
+
+        //设置超时
         builder.writeTimeout((5 * 1000).toLong(), TimeUnit.MILLISECONDS)
         builder.readTimeout((5 * 1000).toLong(), TimeUnit.MILLISECONDS)
         builder.connectTimeout((5 * 1000).toLong(), TimeUnit.MILLISECONDS)
@@ -46,8 +48,8 @@ class RetrofitManager private constructor() {
 
         mRetrofit = Retrofit.Builder()
                 .baseUrl(APIService.API_BASE_SERVER_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create()) //设置 gson 转换器
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) // 设置 RxJava2 适配器
                 .client(okhttpClient)
                 .build()
 
