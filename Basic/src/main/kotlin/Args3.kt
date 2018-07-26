@@ -12,7 +12,7 @@ fun <T> toList2(vararg items: T, str: String): List<String> {
 
 fun main(args: Array<String>) {
 
-    val array = arrayOf("java", "kotlin", "scala", "grvoovy")
+    val array = arrayOf("java", "kotlin", "scala", "groovy")
 
     val list = toList2(*array, str = "tony")
     println(list)

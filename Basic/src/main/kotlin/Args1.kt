@@ -10,6 +10,6 @@ fun <T> toList(vararg items: T): List<T> {
 
 fun main(args: Array<String>) {
 
-    val list = toList("java","kotlin","scala","grvoovy")
+    val list = toList("java","kotlin","scala","groovy")
     println(list)
 }
