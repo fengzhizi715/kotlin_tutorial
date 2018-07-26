@@ -16,6 +16,7 @@ Basic是Java工程，使用IntelliJ Idea打开。
 * Args2.kt
 * Args3.kt
 * Nothing.kt
+* LocalFunction.kt
 
 ## 进阶篇
 Basic是Java工程，使用IntelliJ Idea打开。
