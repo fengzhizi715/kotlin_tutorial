@@ -17,6 +17,8 @@ Basic是Java工程，使用IntelliJ Idea打开。
 * Args3.kt
 * Nothing.kt
 * LocalFunction.kt
+* Recursive.kt
+* TailRecursive.kt
 
 ## 进阶篇
 Basic是Java工程，使用IntelliJ Idea打开。
