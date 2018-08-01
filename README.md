@@ -56,6 +56,9 @@ Basic是Java工程，使用IntelliJ Idea打开。
 ### 实战篇2-4小节
 Retrofit是Android工程，使用Android Studio打开。
 
+### 实战篇5-6小节
+Dagger2是Android工程，使用Android Studio打开。
+
 # 开发工具
 
 Android的工程采用Android Studio3.1开发，gradle版本是4.1。
