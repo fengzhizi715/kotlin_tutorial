@@ -1,5 +1,7 @@
 package com.kotlin.tutorial.dagger2.domain
 
+import javax.inject.Inject
+
 /**
  *
  * @FileName:
@@ -8,4 +10,7 @@ package com.kotlin.tutorial.dagger2.domain
  * @date: 2018-08-01 23:56
  * @version V1.0 <描述当前版本功能>
  */
-data class User(var name:String,var password:String)
+class User @Inject constructor() {
+
+    fun testInject() = "hello world, this is first inject"
+}
