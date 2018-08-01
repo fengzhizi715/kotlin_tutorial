@@ -14,7 +14,7 @@
         android:text="\@Inject 和 @Component的使用"/>
 
     <TextView
-        android:id="@+id/text3"
+        android:id="@+id/text2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="10dp"

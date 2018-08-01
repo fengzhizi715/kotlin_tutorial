@@ -6,13 +6,13 @@ import dagger.Component
 /**
  *
  * @FileName:
- *          com.kotlin.tutorial.dagger2.di.component.UserComponent.kt
+ *          com.kotlin.tutorial.dagger2.di.component.UserComponent1.ktt
  * @author: Tony Shen
  * @date: 2018-08-02 00:21
  * @version V1.0 <描述当前版本功能>
  */
 @Component
-interface UserComponent {
+interface UserComponent1 {
 
     fun inject(activity: Demo4InjectActivity)
 }

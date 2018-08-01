@@ -12,5 +12,7 @@ import javax.inject.Inject
  */
 class User @Inject constructor() {
 
-    fun testInject() = "hello world, this is first inject"
+    fun testInject() = "hello world, this is the first Inject"
+
+    fun testModule() = "hello world, this is the second Inject"
 }
