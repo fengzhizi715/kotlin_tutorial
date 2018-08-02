@@ -55,7 +55,8 @@ Basic是Java工程，使用IntelliJ Idea打开。
 
 ### 实战篇2-4小节
 Retrofit是Android工程，使用Android Studio打开。
-app1 和 app2 两个module，都可以编译成单独的App。
+
+Retrofit 工程中 app1 和 app2 两个module都可以编译成单独的App。
 
 ### 实战篇5-6小节
 Dagger2是Android工程，使用Android Studio打开。
