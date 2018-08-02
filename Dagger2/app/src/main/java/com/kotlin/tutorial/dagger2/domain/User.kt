@@ -12,7 +12,15 @@ import javax.inject.Inject
  */
 class User @Inject constructor() {
 
-    fun testInject() = "hello world, this is the first Inject"
+    lateinit var param:String
 
-    fun testModule() = "hello world, this is the second Inject"
+    constructor(param:String) : this() {
+        this.param = param
+    }
+
+    fun testInject() = "this is the first Inject"
+
+    fun testModule() = "this is the second Inject"
+
+    fun testComponentBuilder() = "this is the third Inject with parameter: $param"
 }
