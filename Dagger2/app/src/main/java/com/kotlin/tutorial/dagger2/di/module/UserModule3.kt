@@ -16,8 +16,5 @@ import dagger.Provides
 class UserModule3 {
 
     @Provides
-    fun provideUser(param:String):User {
-
-        return User(param)
-    }
+    fun provideUser(param:String) = User(param)
 }
