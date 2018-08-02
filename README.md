@@ -55,6 +55,7 @@ Basic是Java工程，使用IntelliJ Idea打开。
 
 ### 实战篇2-4小节
 Retrofit是Android工程，使用Android Studio打开。
+app1 和 app2 两个module，都可以编译成单独的App。
 
 ### 实战篇5-6小节
 Dagger2是Android工程，使用Android Studio打开。
@@ -68,3 +69,7 @@ Java的工程采用Intellij IDEA 2018.1.6 社区版开发。
 
 # 联系方式:
 wechat：fengzhizi715
+
+> Java与Android技术栈：每周更新推送原创技术文章，欢迎扫描下方的公众号二维码并关注，期待与您的共同成长和进步。
+
+![](https://user-gold-cdn.xitu.io/2018/7/24/164cc729c7c69ac1?w=344&h=344&f=jpeg&s=9082)
