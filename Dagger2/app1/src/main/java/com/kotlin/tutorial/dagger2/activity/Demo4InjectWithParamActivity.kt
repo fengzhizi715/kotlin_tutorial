@@ -11,7 +11,8 @@ import javax.inject.Inject
 /**
  *
  * @FileName:
- *          com.kotlin.tutorial.dagger2.activity.Demo4InjectWithParamActivity.kt* @author: Tony Shen
+ *          com.kotlin.tutorial.dagger2.activity.Demo4InjectWithParamActivity.kt
+ * @author: Tony Shen
  * @date: 2018-08-03 12:57
  * @version V1.0 <描述当前版本功能>
  */
