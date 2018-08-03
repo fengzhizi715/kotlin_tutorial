@@ -20,10 +20,19 @@
         android:layout_margin="10dp"
         android:background="@drawable/textview_border"
         android:gravity="center"
-        android:text="\@Provides 和 @Module的使用"/>
+        android:text="\@Provides 和 @Module的使用1"/>
 
     <TextView
         android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="\@Provides 和 @Module的使用2"/>
+
+    <TextView
+        android:id="@+id/text4"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="10dp"
