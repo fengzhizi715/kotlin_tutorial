@@ -22,5 +22,7 @@ class User @Inject constructor() {
 
     fun testModule() = "this is the second Inject"
 
-    fun testComponentBuilder() = "this is the third Inject with parameter: $param"
+    fun testInjectWithParam() =  "this is the Inject with parameter: $param"
+
+    fun testComponentBuilder() = "this is the Inject with parameter: $param"
 }

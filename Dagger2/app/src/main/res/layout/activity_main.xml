@@ -38,6 +38,15 @@
         android:layout_margin="10dp"
         android:background="@drawable/textview_border"
         android:gravity="center"
+        android:text="\@Provides 和 @Module的使用3"/>
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
         android:text="\@Component.Builder的使用"/>
 
 </LinearLayout>

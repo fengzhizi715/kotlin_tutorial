@@ -32,8 +32,15 @@ class MainActivity : AppCompatActivity() {
 
         text4.setOnClickListener {
 
+            val intent = Intent(this,Demo4InjectWithParamActivity::class.java)
+            startActivity(intent)
+        }
+
+        text5.setOnClickListener {
+
             val intent = Intent(this,Demo4ComponentBuilderActivity::class.java)
             startActivity(intent)
         }
+
     }
 }
