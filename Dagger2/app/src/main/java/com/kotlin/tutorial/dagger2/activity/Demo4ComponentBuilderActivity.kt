@@ -3,8 +3,7 @@ package com.kotlin.tutorial.dagger2.activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-
-import com.kotlin.tutorial.dagger2.di.component.DaggerUserComponent3
+import com.kotlin.tutorial.dagger2.di.component.DaggerUserComponent4
 import com.kotlin.tutorial.dagger2.domain.User
 import javax.inject.Inject
 
@@ -24,7 +23,7 @@ class Demo4ComponentBuilderActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        DaggerUserComponent3.builder().param("this is a parameter").build().inject(this)
+        DaggerUserComponent4.builder().param("this is a parameter").build().inject(this)
 
         Toast.makeText(this,user.testComponentBuilder(), Toast.LENGTH_LONG).show()
     }

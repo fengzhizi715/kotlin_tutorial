@@ -3,8 +3,8 @@ package com.kotlin.tutorial.dagger2.activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-import com.kotlin.tutorial.dagger2.di.component.DaggerUserComponent4
-import com.kotlin.tutorial.dagger2.di.module.UserModule4
+import com.kotlin.tutorial.dagger2.di.component.DaggerUserComponent3
+import com.kotlin.tutorial.dagger2.di.module.UserModule3
 import com.kotlin.tutorial.dagger2.domain.User
 import javax.inject.Inject
 
@@ -23,10 +23,10 @@ class Demo4InjectWithParamActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val userModule = UserModule4()
-        userModule.param("this")
+        val userModule = UserModule3()
+        userModule.param("this is a parameter")
 
-        DaggerUserComponent4.builder().userModule4(userModule).build().inject(this)
+        DaggerUserComponent3.builder().userModule3(userModule).build().inject(this)
 
         Toast.makeText(this,user.testInjectWithParam(), Toast.LENGTH_LONG).show()
     }

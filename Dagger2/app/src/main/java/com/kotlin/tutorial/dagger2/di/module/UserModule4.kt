@@ -7,20 +7,14 @@ import dagger.Provides
 /**
  *
  * @FileName:
- *          com.kotlin.tutorial.dagger2.di.module.UserModule4.kt
+ *          com.kotlin.tutorial.dagger2.di.module.UserModule4.java
  * @author: Tony Shen
- * @date: 2018-08-03 13:03
+ * @date: 2018-08-02 17:13
  * @version V1.0 <描述当前版本功能>
  */
 @Module
 class UserModule4 {
 
-    lateinit var param: String
-
-    fun param(param: String) {
-        this.param = param
-    }
-
     @Provides
-    fun provideUser() = User(param)
+    fun provideUser(param:String) = User(param)
 }
