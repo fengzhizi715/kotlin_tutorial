@@ -9,7 +9,7 @@ def libs = rootProject.ext.libraries // 库
 android {
     compileSdkVersion cfg.compileVersion
     defaultConfig {
-        applicationId "com.kotlin.tutorial.dagger2.app1"
+        applicationId "com.kotlin.tutorial.dagger2.app2"
         minSdkVersion cfg.minSdk
         targetSdkVersion cfg.targetSdk
         versionCode 1
