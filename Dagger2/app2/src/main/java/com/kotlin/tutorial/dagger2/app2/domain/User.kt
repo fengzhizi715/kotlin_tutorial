@@ -12,5 +12,13 @@ import javax.inject.Inject
  */
 class User @Inject constructor() {
 
+    private lateinit var userName: String
+
+    constructor(userName:String) : this() {
+        this.userName = userName
+    }
+
     fun testLazy() = "this is the Lazy Inject"
+
+    fun printUserName() = "the userName is $userName"
 }

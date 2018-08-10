@@ -38,5 +38,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        text4.setOnClickListener {
+
+            val intent = Intent(this, Demo4QualifierActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

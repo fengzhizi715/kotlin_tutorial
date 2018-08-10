@@ -32,10 +32,10 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"/>
 
-        <!--<activity-->
-            <!--android:name=".activity.Demo4ComponentBuilderActivity"-->
-            <!--android:configChanges="orientation|keyboardHidden"-->
-            <!--android:screenOrientation="portrait"/>-->
+        <activity
+            android:name=".activity.Demo4QualifierActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"/>
 
         <!--<activity-->
             <!--android:name=".activity.Demo4InjectWithParamActivity"-->
