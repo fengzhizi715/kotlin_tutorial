@@ -9,7 +9,7 @@
 
 # 各小节的例子
 
-## 基础篇
+## 一. 基础篇
 Basic是Java工程，使用IntelliJ Idea打开。
 
 ### Kotlin 的函数
@@ -24,7 +24,7 @@ Basic是Java工程，使用IntelliJ Idea打开。
 
 ### Kotlin 的类
 
-## 进阶篇
+## 二. 进阶篇
 Basic是Java工程，使用IntelliJ Idea打开。
 
 ### 高阶函数和Lambda表达式
@@ -56,7 +56,7 @@ Basic是Java工程，使用IntelliJ Idea打开。
 * Infix2.kt
 * Invoke.kt
 
-## 实战篇
+## 三. 实战篇
 
 ### Kotlin 整合网络框架
 Retrofit是Android工程，使用Android Studio打开。
