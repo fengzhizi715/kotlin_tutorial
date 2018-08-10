@@ -11,7 +11,7 @@
         android:layout_margin="10dp"
         android:background="@drawable/textview_border"
         android:gravity="center"
-        android:text=""/>
+        android:text="点击显示Tony"/>
 
     <TextView
         android:id="@+id/text2"
@@ -20,6 +20,6 @@
         android:layout_margin="10dp"
         android:background="@drawable/textview_border"
         android:gravity="center"
-        android:text=""/>
+        android:text="点击显示Monica"/>
 
 </LinearLayout>
