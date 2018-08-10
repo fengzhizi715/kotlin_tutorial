@@ -2,6 +2,7 @@ package com.kotlin.tutorial.dagger2.app2.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
 import com.kotlin.tutorial.dagger2.app2.R
 import com.kotlin.tutorial.dagger2.app2.di.component.DaggerUserComponent1
 import com.kotlin.tutorial.dagger2.app2.domain.User
@@ -23,7 +24,6 @@ class Demo4LazyActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
 
         DaggerUserComponent1.create().inject(this)
 
@@ -32,6 +32,6 @@ class Demo4LazyActivity : AppCompatActivity() {
 
     private fun initData() {
 
-        println(lazyCar.get().testLazy())
+        Toast.makeText(this,lazyCar.get().testLazy(), Toast.LENGTH_LONG).show()
     }
 }
