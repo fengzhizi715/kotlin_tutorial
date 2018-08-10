@@ -3,11 +3,10 @@ package com.kotlin.tutorial.dagger2.app2.activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-import com.kotlin.tutorial.dagger2.app2.R
 import com.kotlin.tutorial.dagger2.app2.di.component.DaggerUserComponent1
 import com.kotlin.tutorial.dagger2.app2.domain.User
-import javax.inject.Inject
 import dagger.Lazy
+import javax.inject.Inject
 
 /**
  *

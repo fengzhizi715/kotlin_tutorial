@@ -18,14 +18,14 @@
         </activity>
 
         <activity
-            android:name=".activity.Demo4LazyActivity"
+            android:name=".activity.Demo4RecursiveInjectActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"/>
 
-        <!--<activity-->
-            <!--android:name=".activity.Demo4ModuleActivity"-->
-            <!--android:configChanges="orientation|keyboardHidden"-->
-            <!--android:screenOrientation="portrait"/>-->
+        <activity
+            android:name=".activity.Demo4LazyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"/>
 
         <!--<activity-->
             <!--android:name=".activity.Demo4InterfaceInjectActivity"-->

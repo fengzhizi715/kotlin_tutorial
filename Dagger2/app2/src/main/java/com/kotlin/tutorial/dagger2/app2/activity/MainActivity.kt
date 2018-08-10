@@ -20,11 +20,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        text1.setOnClickListener {
-//
-//            val intent = Intent(this,Demo4InjectActivity::class.java)
-//            startActivity(intent)
-//        }
+        text1.setOnClickListener {
+
+            val intent = Intent(this,Demo4RecursiveInjectActivity::class.java)
+            startActivity(intent)
+        }
 
         text2.setOnClickListener {
 
