@@ -1,9 +1,11 @@
+package `class`
+
 /**
  * Created by tony on 2018/8/9.
  */
 class Outter1 {
 
-    val temp:String = "this property is from outter1 class"
+    val str:String = "this property is from outter1 class"
 
     class Nested {
 
