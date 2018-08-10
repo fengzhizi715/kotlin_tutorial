@@ -12,8 +12,5 @@ fun String?.checkEmail(): Boolean {
 fun main(args: Array<String>) {
 
     println("fengzhizi715@126.com".checkEmail())
-
-    var s:String = "123"
-    s.trim()
 }
 
