@@ -32,5 +32,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        text3.setOnClickListener {
+
+            val intent = Intent(this, Demo4ProviderInjectActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
