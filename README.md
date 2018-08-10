@@ -12,6 +12,8 @@
 ## 基础篇
 Basic是Java工程，使用IntelliJ Idea打开。
 
+### Kotlin 的函数
+
 * Args1.kt
 * Args2.kt
 * Args3.kt
@@ -19,6 +21,8 @@ Basic是Java工程，使用IntelliJ Idea打开。
 * LocalFunction.kt
 * Recursive.kt
 * TailRecursive.kt
+
+### Kotlin 的类
 
 ## 进阶篇
 Basic是Java工程，使用IntelliJ Idea打开。
@@ -54,12 +58,12 @@ Basic是Java工程，使用IntelliJ Idea打开。
 
 ## 实战篇
 
-### 实战篇2-4小节
+### Kotlin 整合网络框架
 Retrofit是Android工程，使用Android Studio打开。
 
 Retrofit 工程中 app1 和 app2 两个module都可以编译成单独的App。
 
-### 实战篇5-6小节
+### Kotlin 整合Dagger
 Dagger2是Android工程，使用Android Studio打开。
 
 # 开发工具
