@@ -37,10 +37,10 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"/>
 
-        <!--<activity-->
-            <!--android:name=".activity.Demo4InjectWithParamActivity"-->
-            <!--android:configChanges="orientation|keyboardHidden"-->
-            <!--android:screenOrientation="portrait"/>-->
+        <activity
+            android:name=".activity.Demo4CustomerQualifierActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"/>
 
     </application>
 
