@@ -21,10 +21,12 @@ import javax.inject.Named
 class Demo4QualifierActivity : AppCompatActivity() {
 
     @Inject
-    @field:Named("tony") lateinit var tony: User
+    @field:Named("tony")
+    lateinit var tony: User
 
     @Inject
-    @field:Named("monica") lateinit var monica: User
+    @field:Named("monica")
+    lateinit var monica: User
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
