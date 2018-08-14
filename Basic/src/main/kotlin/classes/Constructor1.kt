@@ -1,4 +1,4 @@
-package `class`
+package classes
 
 /**
  * Created by tony on 2018/8/10.
