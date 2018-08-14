@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import com.kotlin.tutorial.dagger2.app2.di.component.DaggerUserComponent2
 import com.kotlin.tutorial.dagger2.app2.domain.User
+import com.safframework.log.L
 import javax.inject.Inject
 import javax.inject.Provider
 
@@ -40,5 +41,12 @@ class Demo4ProviderInjectActivity : AppCompatActivity() {
         }
 
         Toast.makeText(this,"注入User的数量："+list.size,Toast.LENGTH_LONG).show()
+
+        val user1 = list.get(0)
+
+        val user2 = list.get(1)
+
+        L.i(user1.toString())
+        L.i(user2.toString())
     }
 }
