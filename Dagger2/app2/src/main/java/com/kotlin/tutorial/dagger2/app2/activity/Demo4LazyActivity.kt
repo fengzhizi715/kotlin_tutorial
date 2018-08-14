@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import com.kotlin.tutorial.dagger2.app2.di.component.DaggerUserComponent1
 import com.kotlin.tutorial.dagger2.app2.domain.User
+import com.safframework.log.L
 import dagger.Lazy
 import javax.inject.Inject
 
@@ -19,7 +20,7 @@ import javax.inject.Inject
 class Demo4LazyActivity : AppCompatActivity() {
 
     @Inject
-    lateinit var lazyCar:Lazy<User>
+    lateinit var lazyUser:Lazy<User>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,10 +28,13 @@ class Demo4LazyActivity : AppCompatActivity() {
         DaggerUserComponent1.create().inject(this)
 
         initData()
+
+        L.i(lazyUser.get().toString())
+        L.i(lazyUser.get().toString())
     }
 
     private fun initData() {
 
-        Toast.makeText(this,lazyCar.get().testLazy(), Toast.LENGTH_LONG).show()
+        Toast.makeText(this,lazyUser.get().testLazy(), Toast.LENGTH_LONG).show()
     }
 }
