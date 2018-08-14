@@ -17,9 +17,5 @@ import dagger.Provides
 class AddressModule {
 
     @Provides
-    fun provideAddress(street: Street): Address {
-
-        val address = Address(street)
-        return address
-    }
+    fun provideAddress(street: Street) = Address(street)
 }

@@ -5,7 +5,6 @@ import com.kotlin.tutorial.dagger2.app2.di.qualifier.Tony
 import com.kotlin.tutorial.dagger2.app2.domain.User
 import dagger.Module
 import dagger.Provides
-import javax.inject.Named
 
 /**
  *
