@@ -66,6 +66,8 @@ Retrofit 工程中 app1 和 app2 两个module都可以编译成单独的App。
 ### Kotlin 整合Dagger
 Dagger2是Android工程，使用Android Studio打开。
 
+Dagger2 工程中 app1 和 app2 两个module都可以编译成单独的App。
+
 # 开发工具
 
 Android的工程采用Android Studio3.1开发，gradle版本是4.1。
