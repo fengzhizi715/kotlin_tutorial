@@ -1,18 +1,13 @@
 package classes
 
 /**
- * Created by tony on 2018/8/10.
+ * Created by tony on 2018/8/16.
  */
-class Constructor2(str:String) {
+class Constructor2 constructor() {
 
     init {
 
-        println("$str")
-    }
-
-    constructor(str1: String, str2: String):this(str1) {
-
-        println("$str1 $str2")
+        println("test")
     }
 
     fun foo() = println("this is foo function")
@@ -21,11 +16,6 @@ class Constructor2(str:String) {
 
 fun main(args: Array<String>) {
 
-    val obj1 = Constructor2("hello")
-    obj1.foo()
-
-    println("---------------------------")
-
-    val obj2 = Constructor2("hello","world")
-    obj2.foo()
+    val obj = Constructor2()
+    obj.foo()
 }
