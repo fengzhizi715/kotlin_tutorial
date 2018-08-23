@@ -66,7 +66,7 @@ Retrofit 工程中 app1 和 app2 两个module都可以编译成单独的App。
 ### Kotlin 整合Dagger
 Dagger2是Android工程，使用Android Studio打开。
 
-Dagger2 工程中 app1 和 app2 两个module都可以编译成单独的App。
+Dagger2 工程中 app1、app2 和 app3 三个module都可以编译成单独的App。
 
 # 开发工具
 
