@@ -1,8 +1,8 @@
 package com.kotlin.tutorial.dagger2.app2.di.component
 
 import com.kotlin.tutorial.dagger2.app2.activity.Demo4RecursiveInjectActivity
-import com.kotlin.tutorial.dagger2.app2.di.module.AddressModule
 import com.kotlin.tutorial.dagger2.app2.di.module.StreetModule
+import com.kotlin.tutorial.dagger2.app2.di.module.AddressModule
 import dagger.Component
 
 /**
