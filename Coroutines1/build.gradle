@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.2.31'
+    ext.kotlin_version = '1.2.41'
 
     repositories {
         mavenCentral()
@@ -7,10 +7,6 @@ buildscript {
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
-}
-
-plugins {
-    id 'java'
 }
 
 group 'com.kotlin.tutorial'
@@ -26,7 +22,12 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    testCompile "junit:junit:4.12"
+    testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.0'
+    compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
 }
 
 compileKotlin {
@@ -34,4 +35,10 @@ compileKotlin {
 }
 compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
+}
+
+kotlin {
+    experimental {
+        coroutines 'enable'     // avoid compiler reports a warning every time when we use the experimental coroutines
+    }
 }
