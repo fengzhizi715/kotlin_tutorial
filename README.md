@@ -31,7 +31,11 @@ classes 包下：
 * Constructor3.kt
 * OutterAndNested.kt
 * OutterAndInner.kt
-* 
+* Color.kt
+* CompanionObject.kt
+* DataClass.kt
+* Singleton.kt
+* SealedClass.kt
 
 ## 二. 进阶篇
 Basic是Java工程，使用IntelliJ Idea打开。
