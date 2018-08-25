@@ -29,6 +29,9 @@ classes 包下：
 * Constructor1.kt
 * Constructor2.kt
 * Constructor3.kt
+* OutterAndNested.kt
+* OutterAndInner.kt
+* 
 
 ## 二. 进阶篇
 Basic是Java工程，使用IntelliJ Idea打开。
