@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
     val deferred  = async {
 
         delay(1000)
-        println("Hello World!")
+        println("Hello Coroutines!")
     }
 
     Thread.sleep(2000)

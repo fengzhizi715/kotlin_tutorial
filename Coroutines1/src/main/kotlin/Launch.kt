@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
 
     val job = launch {
         delay(1000)
-        println("Hello World!")
+        println("Hello Coroutines!")
     }
 
     Thread.sleep(2000)
