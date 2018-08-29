@@ -81,6 +81,8 @@ Dagger2是Android工程，使用Android Studio打开。
 
 Dagger2 工程中 app1、app2 和 app3 三个module都可以编译成单独的App。
 
+## 四. 扩展学习篇
+
 # 开发工具
 
 Android的工程采用Android Studio3.1开发，gradle版本是4.1。
