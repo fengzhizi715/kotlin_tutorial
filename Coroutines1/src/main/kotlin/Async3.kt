@@ -4,7 +4,7 @@ import kotlinx.coroutines.experimental.delay
 import kotlinx.coroutines.experimental.launch
 
 /**
- * Created by tony on 2018/8/27.
+ * Created by tony on 2018/8/30.
  */
 
 fun main(args: Array<String>) {
@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
             1
         }
 
-        val  result2 = async {
+        val  result2 = async(start= CoroutineStart.LAZY) {
 
             delay(1000)
             2
