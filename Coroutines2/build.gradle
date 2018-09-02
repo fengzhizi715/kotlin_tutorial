@@ -12,8 +12,6 @@ ext {
     libraries = [
             supportVersion            : "27.0.2",
 
-            dagger                    : "2.16",
-
             rxandroid                 : "2.0.1",
             rxjava                    : "2.1.14",
 
