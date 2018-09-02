@@ -78,8 +78,5 @@ class Demo4RetrofitActivity: AppCompatActivity() {
                 so2_24h.setText("二氧化硫24小时滑动平均：" + zipObject.so2_24h)
             }
         }
-
-
-
     }
 }
