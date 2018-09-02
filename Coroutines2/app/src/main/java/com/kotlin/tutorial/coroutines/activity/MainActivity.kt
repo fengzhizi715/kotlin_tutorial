@@ -1,9 +1,11 @@
 package com.kotlin.tutorial.coroutines.activity
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
+import android.widget.Toast
 import com.kotlin.tutorial.coroutines.R
+import com.kotlin.tutorial.coroutines.ext.onClick
 import kotlinx.android.synthetic.main.activity_main.*
 
 /**
@@ -16,14 +18,15 @@ import kotlinx.android.synthetic.main.activity_main.*
  */
 class MainActivity : AppCompatActivity() {
 
+    private var count = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        text1.setOnClickListener {
+        text1.onClick {
 
-            val intent = Intent(this,Demo4OnClickActivity::class.java)
-            startActivity(intent)
+            Toast.makeText(this@MainActivity, "${count++}", Toast.LENGTH_SHORT).show()
         }
     }
 }
