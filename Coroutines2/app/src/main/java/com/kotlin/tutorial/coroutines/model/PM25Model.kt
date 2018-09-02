@@ -1,0 +1,24 @@
+package com.kotlin.tutorial.coroutines.model
+
+import java.io.Serializable
+
+/**
+ *
+ * @FileName:
+ *          com.kotlin.tutorial.coroutines.model.PM25Model.kt
+ * @author: Tony Shen
+ * @date: 2018-06-20 01:43
+ * @version V1.0 <描述当前版本功能>
+ */
+data class PM25Model(
+
+        var aqi: Int,
+        var area: String,
+        var pm2_5: Int,
+        var pm2_5_24h: Int,
+        var position_name: String,
+        var primary_pollutant: String,
+        var quality: String,
+        var station_code: String,
+        var time_point: String
+) : Serializable

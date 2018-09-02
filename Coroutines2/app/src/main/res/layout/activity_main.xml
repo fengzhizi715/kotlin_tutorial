@@ -13,5 +13,13 @@
         android:gravity="center"
         android:text="防止重复点击"/>
 
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="Retrofit 和协程的结合使用"/>
 
 </LinearLayout>

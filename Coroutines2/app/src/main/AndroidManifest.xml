@@ -19,9 +19,11 @@
         </activity>
 
         <activity
-            android:name=".activity.Demo4OnClickActivity"
+            android:name=".activity.Demo4RetrofitActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"/>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>

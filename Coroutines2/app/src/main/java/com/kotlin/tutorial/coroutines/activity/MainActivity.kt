@@ -1,8 +1,8 @@
 package com.kotlin.tutorial.coroutines.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import android.widget.Toast
 import com.kotlin.tutorial.coroutines.R
 import com.kotlin.tutorial.coroutines.ext.onClick
@@ -27,6 +27,12 @@ class MainActivity : AppCompatActivity() {
         text1.onClick {
 
             Toast.makeText(this@MainActivity, "${count++}", Toast.LENGTH_SHORT).show()
+        }
+
+        text2.setOnClickListener{
+
+            val intent = Intent(this,Demo4RetrofitActivity::class.java)
+            startActivity(intent)
         }
     }
 }

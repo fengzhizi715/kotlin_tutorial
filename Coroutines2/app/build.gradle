@@ -36,6 +36,18 @@ dependencies {
 
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.3'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:0.23.3'
+
+    implementation "io.reactivex.rxjava2:rxandroid:${libs.rxandroid}"
+    implementation "io.reactivex.rxjava2:rxjava:${libs.rxjava}"
+
+    implementation "com.squareup.retrofit2:retrofit:${libs.retrofit}"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:${libs.retrofit}"
+    implementation "com.squareup.retrofit2:converter-gson:$libs.retrofit"
+
+    implementation "com.safframework.log:saf-logginginterceptor:${libs.saf_logginginterceptor}"
+
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-experimental-adapter:1.0.0'
+
 }
 
 kotlin {
