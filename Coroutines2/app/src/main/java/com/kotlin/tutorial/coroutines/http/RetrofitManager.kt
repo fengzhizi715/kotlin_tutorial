@@ -51,7 +51,7 @@ class RetrofitManager private constructor() {
         mRetrofit = Retrofit.Builder()
                 .baseUrl(APIService.API_BASE_SERVER_URL)
                 .addConverterFactory(GsonConverterFactory.create()) //设置 gson 转换器
-                .addCallAdapterFactory(CoroutineCallAdapterFactory())
+                .addCallAdapterFactory(CoroutineCallAdapterFactory()) // 设置协程的适配器
                 .client(okhttpClient)
                 .build()
 

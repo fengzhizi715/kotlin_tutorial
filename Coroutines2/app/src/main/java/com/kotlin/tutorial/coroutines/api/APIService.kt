@@ -10,7 +10,7 @@ import retrofit2.http.Query
 /**
  *
  * @FileName:
- *          com.kotlin.tutorial.retrofit.app1.ap2.APIService.kt
+ *          com.kotlin.tutorial.coroutines.api.APIService.kt
  * @author: Tony Shen
  * @date: 2018-06-18 19:28
  * @version V1.0 <描述当前版本功能>
