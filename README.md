@@ -38,7 +38,7 @@ classes 包下：
 * SealedClass.kt
 
 ## 二. 进阶篇
-Basic是Java工程，使用IntelliJ Idea打开。
+Basic 是Java工程，使用IntelliJ Idea打开。
 
 ### 高阶函数和Lambda表达式
 
@@ -72,7 +72,7 @@ Basic是Java工程，使用IntelliJ Idea打开。
 ## 三. 实战篇
 
 ### Kotlin 整合网络框架
-Retrofit是Android工程，使用Android Studio打开。
+Retrofit 是Android工程，使用Android Studio打开。
 
 Retrofit 工程中 app1 和 app2 两个module都可以编译成单独的App。
 
@@ -84,6 +84,8 @@ Dagger2 工程中 app1、app2 和 app3 三个module都可以编译成单独的Ap
 ## 四. 扩展学习篇
 
 ### Kotlin 的协程及其使用
+Coroutines1 是Java工程，使用IntelliJ Idea打开。
+Coroutines2 是Android工程，使用Android Studio打开。
 
 
 # 开发工具
