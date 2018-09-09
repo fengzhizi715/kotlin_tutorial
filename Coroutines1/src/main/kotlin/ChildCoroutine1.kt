@@ -24,6 +24,9 @@ fun main(args: Array<String>) {
             delay(1000)
             println("job2: I will not execute this line if my parent job is cancelled")
         }
+
+        job1.join()
+        job2.join()
     }
 
     Thread.sleep(500)
