@@ -1,23 +1,41 @@
-import kotlinx.coroutines.experimental.CommonPool
 import kotlinx.coroutines.experimental.delay
 import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.experimental.runBlocking
 
 /**
  * Created by tony on 2018/9/9.
  */
-fun main(args: Array<String>) {
+fun main(args: Array<String>) = runBlocking {
 
     val job = launch {
 
-        val childJob = launch(CommonPool) {
-            println("childJob: I am a child of the request coroutine, but with a different dispatcher")
+        val job1 = launch(coroutineContext)  {
+
+            println("job1 is running")
             delay(1000)
-            println("childJob: I will not execute this line if my parent job is cancelled")
+            println("job1 is done")
         }
 
-        childJob.join()
+        val job2 = launch(coroutineContext) {
+
+            println("job2 is running")
+            delay(1500)
+            println("job2 is done")
+        }
+
+        val job3 = launch(coroutineContext) {
+
+            println("job3 is running")
+            delay(2000)
+            println("job3 is done")
+        }
+
+        job1.join()
+        job2.join()
+        job3.join()
     }
-    Thread.sleep(500)
-    job.cancel() // 取消请求
-    Thread.sleep(2000)
+
+    job.join()
+
+    println("all the jobs is complete")
 }

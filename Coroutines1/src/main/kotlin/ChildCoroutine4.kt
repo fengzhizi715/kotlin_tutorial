@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
 
     val job = launch {
 
-        val childJob = launch(CommonPool) {
+        val childJob = launch(CommonPool+coroutineContext) {
             println("childJob: I am a child of the request coroutine, but with a different dispatcher")
             delay(1000)
             println("childJob: I will not execute this line if my parent job is cancelled")
