@@ -2,7 +2,6 @@ import kotlinx.coroutines.experimental.CommonPool
 import kotlinx.coroutines.experimental.channels.ReceiveChannel
 import kotlinx.coroutines.experimental.channels.produce
 import kotlinx.coroutines.experimental.channels.consumeEach
-import kotlinx.coroutines.experimental.delay
 import kotlinx.coroutines.experimental.runBlocking
 
 /**
@@ -41,4 +40,5 @@ fun main(args: Array<String>) = runBlocking<Unit> {
 
     numbers.cancel()
     squares.cancel()
+    adds.cancel()
 }
