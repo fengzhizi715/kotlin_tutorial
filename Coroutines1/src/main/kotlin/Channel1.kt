@@ -13,14 +13,19 @@ fun main(args: Array<String>) = runBlocking {
 
             i ->
             delay(200)
-            channel.send((i+1) * (i+1))
+            channel.send((i + 1) * (i + 1))
         }
     }
 
-    repeat(5) {
+    launch(CommonPool) {
 
-        println(channel.receive())
+        repeat(5) {
+
+            println(channel.receive())
+        }
     }
+
+    delay(2000)
 
     println("Done!")
 }

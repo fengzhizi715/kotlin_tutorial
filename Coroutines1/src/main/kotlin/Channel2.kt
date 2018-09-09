@@ -26,14 +26,18 @@ fun main(args: Array<String>) = runBlocking {
         }
     }
 
-    repeat(5) {
+    launch(CommonPool) {
+        repeat(5) {
 
-        try {
-            println(channel.receive())
-        }catch (e: ClosedReceiveChannelException){
-            println("There is a ClosedReceiveChannelException.")
+            try {
+                println(channel.receive())
+            }catch (e: ClosedReceiveChannelException){
+                println("There is a ClosedReceiveChannelException.")
+            }
         }
     }
+
+    delay(2000)
 
     println("Done!")
 }
