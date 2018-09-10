@@ -10,6 +10,8 @@ fun main(args: Array<String>) = runBlocking(CommonPool) {
 
     jobs += launch(Unconfined) { // 无限制
         println("'Unconfined': I'm working in thread ${Thread.currentThread().name}")
+        delay(500)
+        println("'Unconfined': After delay in thread ${Thread.currentThread().name}")
     }
 
     jobs += launch(coroutineContext) { // 使用父级的上下文，也就是 runBlocking 的上下文
