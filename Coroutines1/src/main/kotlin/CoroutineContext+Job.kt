@@ -20,19 +20,19 @@ fun main(args: Array<String>) = runBlocking<Unit> {
         println("job2 is done")
     }
 
-    launch(coroutineContext+job) {
+    launch(CommonPool+job) {
 
         delay(1500)
         println("job3 is done")
     }
 
-    launch(coroutineContext+job) {
+    launch(CommonPool+job) {
 
         delay(2000)
         println("job4 is done")
     }
 
-    launch(coroutineContext+job) {
+    launch(CommonPool+job) {
 
         delay(2500)
         println("job5 is done")

@@ -15,7 +15,7 @@ fun main(args: Array<String>) {
 
             println("job1: I have my own context and execute independently!")
             delay(1000)
-            println("job1: I am not affected by cancellation of the request")
+            println("job1: I am not affected by cancellation of the job")
         }
 
         // 另一个继承父级上下文
