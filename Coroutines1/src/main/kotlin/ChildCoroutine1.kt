@@ -7,7 +7,7 @@ import kotlin.coroutines.experimental.coroutineContext
  */
 fun main(args: Array<String>) {
 
-    // 创建一个协程，并创建两个子协程
+    // 创建一个协程，并在内部再创建两个协程
     val job = launch {
 
         // 其一使用不同的上下文
