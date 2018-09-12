@@ -15,6 +15,5 @@ class Outter2 {
 
 fun main(args: Array<String>) {
 
-    val outter = Outter2()
-    outter.Inner().foo()
+    Outter2().Inner().foo()
 }
