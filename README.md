@@ -5,6 +5,10 @@
 
 此 repository 是本人掘金的小册《Android 进阶：基于 Kotlin 的 Android App 开发实践》中的相关的例子。
 
+小册主要内容：
+![](https://user-gold-cdn.xitu.io/2018/9/17/165e3210c5d82900?w=2948&h=2580&f=png&s=399321)
+
+
 小册地址：https://juejin.im/book/5af1c5ee6fb9a07a9f018368
 
 # 各小节的例子
