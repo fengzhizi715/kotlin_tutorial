@@ -72,6 +72,7 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 * Infix1.kt
 * Infix2.kt
 * Invoke.kt
+* Assertion.kt
 
 ## 三. 实战篇
 
@@ -93,7 +94,14 @@ Coroutines1 是Java工程，使用IntelliJ Idea打开。
 Coroutines2 是Android工程，使用Android Studio打开。
 
 ### Kotlin 的DSL及其使用
+DSL 是Java工程，使用IntelliJ Idea打开。
 
+* Receiver.kt
+* Apply.kt
+* UserWrapper.kt
+* Invoke.kt
+* Dependency.kt
+* 
 
 # 开发工具
 
