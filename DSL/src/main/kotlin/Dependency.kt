@@ -4,11 +4,11 @@
 class Dependency {
 
     fun compile(library: String) {
-        println("added dependency on $library")
+        println("$library")
     }
 
-    operator fun invoke(body: Dependency.() -> Unit) {
-        body()
+    operator fun invoke(action: Dependency.() -> Unit) {
+        action()
     }
 }
 
