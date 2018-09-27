@@ -11,11 +11,6 @@ fun main(args: Array<String>) {
         this + it
     }
 
-    val sum3: Int.(Int) -> Int = {
-        plus(it)
-    }
-
     println(sum1(3,5))
     println(3.sum2(5))
-    println(3.sum3(5))
 }
