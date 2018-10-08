@@ -3,6 +3,9 @@ package com.kotlin.tutorial.aac.activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.kotlin.tutorial.aac.R
+import com.kotlin.tutorial.aac.lifecycle.LifeCycleListener
+
+
 
 /**
  *
@@ -17,5 +20,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        lifecycle.addObserver(LifeCycleListener())
     }
 }
