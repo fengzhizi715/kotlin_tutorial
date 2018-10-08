@@ -1,10 +1,10 @@
 package com.kotlin.tutorial.aac.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.kotlin.tutorial.aac.R
-import com.kotlin.tutorial.aac.lifecycle.LifeCycleListener
-
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 /**
@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        lifecycle.addObserver(LifeCycleListener())
+        text1.setOnClickListener {
+
+            val intent = Intent(this,Activity1::class.java)
+            startActivity(intent)
+        }
     }
 }
