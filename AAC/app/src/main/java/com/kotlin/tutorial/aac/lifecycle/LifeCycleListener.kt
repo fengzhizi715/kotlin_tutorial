@@ -52,6 +52,6 @@ class LifeCycleListener : LifecycleObserver {
     }
 
     companion object {
-        private val TAG = "LifeCycleListener"
+        private val TAG = LifeCycleListener::class.java.simpleName
     }
 }
