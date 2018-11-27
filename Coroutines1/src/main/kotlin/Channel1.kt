@@ -1,5 +1,5 @@
-import kotlinx.coroutines.experimental.*
-import kotlinx.coroutines.experimental.channels.Channel
+import kotlinx.coroutines.*
+import kotlinx.coroutines.channels.Channel
 
 /**
  * Created by tony on 2018/9/9.
@@ -7,7 +7,7 @@ import kotlinx.coroutines.experimental.channels.Channel
 fun main(args: Array<String>) = runBlocking {
 
     val channel = Channel<Int>()  //定义一个通道
-    launch(CommonPool) {
+    launch(Dispatchers.Default) {
 
         repeat(5) {
 
@@ -17,7 +17,7 @@ fun main(args: Array<String>) = runBlocking {
         }
     }
 
-    launch(CommonPool) {
+    launch(Dispatchers.Default) {
 
         repeat(5) {
 

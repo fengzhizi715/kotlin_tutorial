@@ -1,6 +1,6 @@
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
-import kotlin.coroutines.experimental.coroutineContext
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 /**
  * Created by tony on 2018/9/9.
@@ -8,7 +8,7 @@ import kotlin.coroutines.experimental.coroutineContext
 fun main(args: Array<String>) {
 
     // 创建一个协程，并在内部再创建两个协程
-    val job = launch {
+    val job = GlobalScope.launch {
 
         // 其一使用不同的上下文
         val job1 = launch {

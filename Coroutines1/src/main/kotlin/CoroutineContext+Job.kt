@@ -1,5 +1,4 @@
-import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.coroutineContext
+import kotlinx.coroutines.*
 
 /**
  * Created by tony on 2018/9/9.
@@ -20,19 +19,19 @@ fun main(args: Array<String>) = runBlocking<Unit> {
         println("job2 is done")
     }
 
-    launch(CommonPool+job) {
+    launch(Dispatchers.Default+job) {
 
         delay(1500)
         println("job3 is done")
     }
 
-    launch(CommonPool+job) {
+    launch(Dispatchers.Default+job) {
 
         delay(2000)
         println("job4 is done")
     }
 
-    launch(CommonPool+job) {
+    launch(Dispatchers.Default+job) {
 
         delay(2500)
         println("job5 is done")

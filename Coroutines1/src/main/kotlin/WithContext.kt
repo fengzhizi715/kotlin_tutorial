@@ -1,8 +1,6 @@
 
-import kotlinx.coroutines.experimental.CommonPool
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
-import kotlinx.coroutines.experimental.withContext
+import kotlinx.coroutines.*
+import kotlinx.coroutines.withContext
 
 /**
  * Created by tony on 2018/8/26.
@@ -10,15 +8,15 @@ import kotlinx.coroutines.experimental.withContext
 
 fun main(args: Array<String>) {
 
-    launch {
+    GlobalScope.launch {
 
-        val result1 = withContext(CommonPool) {
+        val result1 = withContext(Dispatchers.Default) {
 
             delay(2000)
             1
         }
 
-        val  result2 = withContext(CommonPool) {
+        val  result2 = withContext(Dispatchers.Default) {
 
             delay(1000)
             2

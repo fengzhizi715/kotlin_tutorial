@@ -1,5 +1,6 @@
-import kotlinx.coroutines.experimental.async
-import kotlinx.coroutines.experimental.delay
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
 
 /**
  * Created by tony on 2018/8/26.
@@ -7,7 +8,7 @@ import kotlinx.coroutines.experimental.delay
 
 fun main(args: Array<String>) {
 
-    val deferred  = async {
+    val deferred  = GlobalScope.async {
 
         delay(1000)
         println("Hello Coroutines!")

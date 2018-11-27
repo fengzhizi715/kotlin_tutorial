@@ -1,5 +1,4 @@
-import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.coroutineContext
+import kotlinx.coroutines.*
 
 /**
  * Created by tony on 2018/9/9.
@@ -8,7 +7,7 @@ fun main(args: Array<String>) = runBlocking {
 
     val jobs = ArrayList<Job>()
 
-    jobs += launch(Unconfined) { // 无限制
+    jobs += launch(Dispatchers.Unconfined) { // 无限制
         println("'Unconfined': I'm working in thread ${Thread.currentThread().name}")
     }
 
@@ -16,7 +15,7 @@ fun main(args: Array<String>) = runBlocking {
         println("'coroutineContext': I'm working in thread ${Thread.currentThread().name}")
     }
 
-    jobs += launch(CommonPool) {
+    jobs += launch(Dispatchers.Default) {
         println("'CommonPool': I'm working in thread ${Thread.currentThread().name}")
     }
 

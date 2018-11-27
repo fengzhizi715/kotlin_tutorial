@@ -1,9 +1,6 @@
-import kotlinx.coroutines.experimental.CommonPool
-import kotlinx.coroutines.experimental.channels.Channel
-import kotlinx.coroutines.experimental.channels.ClosedReceiveChannelException
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.*
+import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.channels.ClosedReceiveChannelException
 
 /**
  * Created by tony on 2018/9/9.
@@ -11,7 +8,7 @@ import kotlinx.coroutines.experimental.runBlocking
 fun main(args: Array<String>) = runBlocking {
 
     val channel = Channel<Int>()  //定义一个通道
-    launch(CommonPool) {
+    launch(Dispatchers.Default) {
 
         repeat(5) {
 
@@ -26,7 +23,7 @@ fun main(args: Array<String>) = runBlocking {
         }
     }
 
-    launch(CommonPool) {
+    launch(Dispatchers.Default) {
         repeat(5) {
 
             try {

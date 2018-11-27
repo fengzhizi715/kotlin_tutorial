@@ -1,16 +1,16 @@
-import kotlinx.coroutines.experimental.cancelChildren
-import kotlinx.coroutines.experimental.channels.ReceiveChannel
-import kotlinx.coroutines.experimental.channels.produce
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.runBlocking
-import kotlinx.coroutines.experimental.selects.select
-import kotlin.coroutines.experimental.CoroutineContext
-import kotlin.coroutines.experimental.coroutineContext
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.cancelChildren
+import kotlinx.coroutines.channels.ReceiveChannel
+import kotlinx.coroutines.channels.produce
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.selects.select
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Created by tony on 2018/9/10.
  */
-fun produce1(context: CoroutineContext) = produce<String>(context) {
+fun produce1(context: CoroutineContext) = GlobalScope.produce<String>(context) {
 
     while (true) {
         delay(300)
@@ -18,7 +18,7 @@ fun produce1(context: CoroutineContext) = produce<String>(context) {
     }
 }
 
-fun produce2(context: CoroutineContext) = produce<String>(context) {
+fun produce2(context: CoroutineContext) = GlobalScope.produce<String>(context) {
 
     while (true) {
         delay(500)

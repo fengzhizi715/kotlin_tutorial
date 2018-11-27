@@ -1,6 +1,7 @@
-import kotlinx.coroutines.experimental.async
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 /**
  * Created by tony on 2018/8/27.
@@ -8,7 +9,7 @@ import kotlinx.coroutines.experimental.launch
 
 fun main(args: Array<String>) {
 
-    launch {
+    GlobalScope.launch {
 
         val result1 = async {
 

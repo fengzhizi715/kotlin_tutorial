@@ -1,26 +1,28 @@
-import kotlinx.coroutines.experimental.CommonPool
-import kotlinx.coroutines.experimental.channels.ReceiveChannel
-import kotlinx.coroutines.experimental.channels.produce
-import kotlinx.coroutines.experimental.channels.consumeEach
-import kotlinx.coroutines.experimental.runBlocking
+
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.channels.ReceiveChannel
+import kotlinx.coroutines.channels.consumeEach
+import kotlinx.coroutines.channels.produce
+import kotlinx.coroutines.runBlocking
 
 /**
  * Created by tony on 2018/9/10.
  */
 
-fun produce1() = produce(CommonPool) {
+fun produce1() = GlobalScope.produce(Dispatchers.Default) {
     for (x in 1..5) {
         send(x)
     }
 }
 
-fun produce2(numbers: ReceiveChannel<Int>) = produce(CommonPool) {
+fun produce2(numbers: ReceiveChannel<Int>) = GlobalScope.produce(Dispatchers.Default) {
     for (x in numbers) {
         send((x * x))
     }
 }
 
-fun produce3(numbers: ReceiveChannel<Int>) = produce(CommonPool) {
+fun produce3(numbers: ReceiveChannel<Int>) = GlobalScope.produce(Dispatchers.Default) {
     for (x in numbers) {
         send(x+1)
     }

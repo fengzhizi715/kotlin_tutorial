@@ -1,16 +1,17 @@
-import kotlinx.coroutines.experimental.CommonPool
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
-import kotlin.coroutines.experimental.coroutineContext
+
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 /**
  * Created by tony on 2018/9/9.
  */
 fun main(args: Array<String>) {
 
-    val job = launch {
+    val job = GlobalScope.launch {
 
-        val childJob = launch(CommonPool+coroutineContext) {
+        val childJob = launch(Dispatchers.Default+coroutineContext) {
             println("childJob: I am a child of the job coroutine, but with a different dispatcher")
             delay(1000)
             println("childJob: I will not execute this line if my parent job is cancelled")
