@@ -107,7 +107,9 @@ DSL 是Java工程，使用IntelliJ Idea打开。
 
 Android的工程采用Android Studio3.2开发，gradle版本是4.4。
 
-Java的工程采用Intellij IDEA 2018.1.6 社区版开发。
+Java的工程采用Intellij IDEA 2018.3 社区版开发。
+
+Kotlin 版本 1.3.10
 
 
 # 联系方式:
