@@ -6,7 +6,7 @@ import kotlinx.coroutines.runBlocking
  * Created by tony on 2018/8/26.
  */
 
-fun main(args: Array<String>) = runBlocking<Unit> {
+fun main(args: Array<String>) = runBlocking {
 
     launch {
         delay(1000)

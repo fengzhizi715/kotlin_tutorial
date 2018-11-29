@@ -16,7 +16,7 @@ fun main(args: Array<String>) = runBlocking {
     }
 
     jobs += launch(Dispatchers.Default) {
-        println("'CommonPool': I'm working in thread ${Thread.currentThread().name}")
+        println("'Dispatchers.Default': I'm working in thread ${Thread.currentThread().name}")
     }
 
     jobs += launch {
