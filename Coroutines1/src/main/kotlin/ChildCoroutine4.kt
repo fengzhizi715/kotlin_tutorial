@@ -11,10 +11,10 @@ fun main(args: Array<String>) {
 
     val job = GlobalScope.launch {
 
-        val childJob = GlobalScope.launch(Dispatchers.Default+coroutineContext) {
+        val childJob = GlobalScope.launch(Dispatchers.Default + coroutineContext) {
             println("childJob: I am a child of the job coroutine, but with a different dispatcher")
             delay(1000)
-            println("childJob: I will not execute this line if my parent job is cancelled")
+            println("childJob: I will not execute this line if job is cancelled")
         }
 
         childJob.join()

@@ -39,5 +39,5 @@ fun main(args: Array<String>) = runBlocking<Unit> {
 
     delay(1800)
     println("Cancelling the job!")
-    job.cancelAndJoin() // 等待子协程完成后取消任务
+    job.cancel() // 取消任务
 }
