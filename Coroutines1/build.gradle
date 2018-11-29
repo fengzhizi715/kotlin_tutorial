@@ -6,8 +6,6 @@ plugins {
 group 'com.kotlin.tutorial'
 version '1.0-SNAPSHOT'
 
-apply plugin: 'kotlin'
-
 sourceCompatibility = 1.8
 
 repositories {
