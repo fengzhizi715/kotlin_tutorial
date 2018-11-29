@@ -27,6 +27,7 @@ Basic是Java工程，使用IntelliJ Idea打开。
 * LocalFunction.kt
 * Recursive.kt
 * TailRecursive.kt
+* Main.kt
 
 ### Kotlin 的类
 
