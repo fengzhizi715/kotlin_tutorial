@@ -20,10 +20,24 @@ fun validate(person: Person):Boolean {
     return true
 }
 
+fun printPerson(person:Person) {
+
+    val name = person.name
+    val password = person.password
+
+    fun print() {
+
+        println("name=$name,password=$password")
+    }
+
+    print()
+}
+
 fun main(args: Array<String>) {
 
     val user1 = Person("tony","123456")
     println(validate(user1))
+    printPerson(user1)
 
     val user2 = Person("tom","")
     println(validate(user2))
