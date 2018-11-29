@@ -5,11 +5,16 @@ data class Person(var name:String,var password:String)
 
 fun validate(person: Person):Boolean {
 
+    /**
+     * 验证单个字符串输入的方法
+     */
     fun validateInput(input: String?) {
+
         if (input == null || input.isEmpty()) {
             throw IllegalArgumentException("must not be empty")
         }
     }
+
     validateInput(person.name)
     validateInput(person.password)
     return true
