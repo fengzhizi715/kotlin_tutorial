@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
 
     val job = GlobalScope.launch {
 
-        val childJob = launch(Dispatchers.Default) {
+        val childJob = GlobalScope.launch(Dispatchers.Default) {
             println("childJob: I am a child of the request coroutine, but with a different dispatcher")
             delay(1000)
             println("childJob: I will not execute this line if my parent job is cancelled")
