@@ -6,7 +6,7 @@ import kotlinx.coroutines.yield
  * Created by tony on 2018-11-30.
  */
 
-fun main() = runBlocking {
+fun main(args: Array<String>) = runBlocking {
 
     val job1 = launch {
 
