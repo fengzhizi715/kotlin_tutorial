@@ -14,19 +14,13 @@ fun main(args: Array<String>) {
             1
         }
 
-        val  result2 = withContext(Dispatchers.IO) {
+        val  result2 = coroutineScope {
 
             delay(1000)
             2
         }
 
-        val  result3 = coroutineScope {
-
-            delay(1000)
-            3
-        }
-
-        val  result = result1 + result2 + result3
+        val  result = result1 + result2
         println(result)
     }
 
