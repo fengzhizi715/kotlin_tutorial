@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
             1
         }
 
-        val  result2 = withContext(Dispatchers.Default) {
+        val  result2 = withContext(Dispatchers.IO) {
 
             delay(1000)
             2
