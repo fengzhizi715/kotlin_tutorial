@@ -1,13 +1,9 @@
 /**
  * Created by tony on 2018/7/13.
  */
-open class Base {
+open class Base
 
-}
-
-class Child: Base() {
-
-}
+class Child: Base()
 
 fun Base.foo() = println("this is from base")
 
