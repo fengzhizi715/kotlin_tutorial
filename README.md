@@ -52,6 +52,7 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 * HigherOrderFunctions1.kt
 * HigherOrderFunctions2.kt
 * HigherOrderFunctions3.kt
+* Sequence.kt
 * Lambda.kt
 * MethodReference.kt
 * SAM.kt
