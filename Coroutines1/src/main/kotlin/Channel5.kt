@@ -16,7 +16,7 @@ fun main(args: Array<String>) = runBlocking<Unit>{
         }
     }
 
-    launch(Dispatchers.Default) {
+    launch {
 
         delay(1000)
         repeat(6) {

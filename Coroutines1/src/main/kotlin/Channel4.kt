@@ -1,5 +1,4 @@
 
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
@@ -18,7 +17,7 @@ fun main(args: Array<String>) = runBlocking<Unit>{
         }
     }
 
-    launch(Dispatchers.Default) {
+    launch {
         repeat(6) {
 
             println("Receive ${channel.receive()}")
