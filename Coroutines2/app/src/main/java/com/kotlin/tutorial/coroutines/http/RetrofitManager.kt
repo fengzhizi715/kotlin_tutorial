@@ -1,11 +1,11 @@
 package com.kotlin.tutorial.coroutines.http
 
-import com.jakewharton.retrofit2.adapter.kotlin.coroutines.experimental.CoroutineCallAdapterFactory
+
+import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.kotlin.tutorial.coroutines.api.APIService
 import com.safframework.http.interceptor.LoggingInterceptor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
-import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import java.util.concurrent.TimeUnit
 
 import retrofit2.converter.gson.GsonConverterFactory

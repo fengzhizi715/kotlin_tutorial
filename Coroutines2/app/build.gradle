@@ -46,6 +46,5 @@ dependencies {
 
     implementation "com.safframework.log:saf-logginginterceptor:${libs.saf_logginginterceptor}"
 
-    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-experimental-adapter:1.0.0'
-
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
 }
