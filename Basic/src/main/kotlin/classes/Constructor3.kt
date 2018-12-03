@@ -10,7 +10,7 @@ class Constructor3(str:String) {
         println("$str")
     }
 
-    constructor(str1: String, str2: String):this(str1) {
+    constructor(str1: String, str2: String):this(str1) { // 调用主构造函数以及初始化块
 
         println("$str1 $str2")
     }
@@ -21,11 +21,6 @@ class Constructor3(str:String) {
 
 fun main(args: Array<String>) {
 
-    val obj1 = Constructor3("hello")
-    obj1.foo()
-
-    println("---------------------------")
-
-    val obj2 = Constructor3("hello","world")
-    obj2.foo()
+    val obj = Constructor3("hello","world")
+    obj.foo()
 }
