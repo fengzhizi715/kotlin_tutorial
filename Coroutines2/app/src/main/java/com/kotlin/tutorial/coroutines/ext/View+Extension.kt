@@ -1,11 +1,8 @@
 package com.kotlin.tutorial.coroutines.ext
 
 import android.view.View
-import kotlinx.coroutines.experimental.Job
-import kotlinx.coroutines.experimental.NonCancellable
-import kotlinx.coroutines.experimental.android.UI
-import kotlinx.coroutines.experimental.channels.actor
-import kotlinx.coroutines.experimental.delay
+import kotlinx.coroutines.*
+import kotlinx.coroutines.channels.actor
 
 /**
  *
@@ -23,13 +20,16 @@ val View.contextJob: Job
     get() = (context as? JobHolder)?.job ?: NonCancellable
 
 fun View.onClick(time: Long = 600,action: suspend (View) -> Unit) {
+
     // launch one actor as a parent of the context job
-    val eventActor = actor<Unit>(contextJob + UI) {
+    val eventActor = GlobalScope.actor<Unit>(contextJob + Dispatchers.Main ) {
         for (event in channel) {
+
             delay(time)
             action(this@onClick)
         }
     }
+
     // install a listener to activate this actor
     setOnClickListener {
         eventActor.offer(Unit)

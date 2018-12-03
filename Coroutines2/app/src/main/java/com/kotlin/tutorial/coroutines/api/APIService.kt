@@ -3,7 +3,7 @@ package com.kotlin.tutorial.coroutines.api
 
 import com.kotlin.tutorial.coroutines.model.PM25Model
 import com.kotlin.tutorial.coroutines.model.SO2Model
-import kotlinx.coroutines.experimental.Deferred
+import kotlinx.coroutines.Deferred
 import retrofit2.http.GET
 import retrofit2.http.Query
 

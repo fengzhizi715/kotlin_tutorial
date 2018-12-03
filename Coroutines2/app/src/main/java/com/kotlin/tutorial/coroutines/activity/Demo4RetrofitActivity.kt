@@ -9,10 +9,10 @@ import com.kotlin.tutorial.coroutines.model.PM25Model
 import com.kotlin.tutorial.coroutines.model.SO2Model
 import com.kotlin.tutorial.coroutines.model.ZipObject
 import kotlinx.android.synthetic.main.activity_demo_4_retrofit.*
-import kotlinx.coroutines.experimental.CommonPool
-import kotlinx.coroutines.experimental.android.UI
-import kotlinx.coroutines.experimental.async
-import kotlinx.coroutines.experimental.withContext
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.withContext
 
 /**
  *
@@ -35,7 +35,7 @@ class Demo4RetrofitActivity: AppCompatActivity() {
 
         val apiService = RetrofitManager.get().apiService()
 
-        async(CommonPool) {
+        GlobalScope.async(Dispatchers.Default) {
 
             val pm25List = apiService.pm25(Constant.CITY_ID, Constant.TOKEN).await()
 
@@ -68,7 +68,7 @@ class Demo4RetrofitActivity: AppCompatActivity() {
                     so2Model?.so2_24h)
 
 
-            withContext(UI) {
+            withContext(Dispatchers.Main) {
 
                 quality.setText("空气质量指数：" + zipObject.pm2_5_quality)
                 pm2_5.setText("PM2.5 1小时内平均：" + zipObject.pm2_5)
