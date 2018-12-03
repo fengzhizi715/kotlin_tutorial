@@ -36,6 +36,7 @@ classes 包下：
 * Constructor1.kt
 * Constructor2.kt
 * Constructor3.kt
+* Constructor4.kt
 * OutterAndNested.kt
 * OutterAndInner.kt
 * Color.kt
