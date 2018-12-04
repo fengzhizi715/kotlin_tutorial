@@ -1,9 +1,7 @@
 /**
  * Created by tony on 2018/5/31.
  */
-class Extension3 {
-
-}
+class Extension3
 
 val Extension3.text:String
     get() =  "this is a text property"
