@@ -38,13 +38,13 @@ class Student(studentId: Int, marks: Marks, totals: Totals)
 
 fun main(args: Array<String>) {
 
-    val student1 = Student(1, StdMarks(), StdTotals())
+    val student1 = Student(1, StdMarks(), StdTotals()) // Student 委托 StdMarks、StdTotals
     student1.printMarks()
     student1.printTotals()
 
     println("---------------------------")
 
-    val student2 = Student(2, ExcelMarks(), ExcelTotals())
+    val student2 = Student(2, ExcelMarks(), ExcelTotals()) // Student 委托 ExcelMarks、ExcelTotals
     student2.printMarks()
     student2.printTotals()
 }
