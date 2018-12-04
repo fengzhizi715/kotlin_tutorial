@@ -73,6 +73,7 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 ### 委托、运算符重载以及中缀表达式
 
 * Delegate.kt （delegates包下）
+* DatabaseDelegate（delegates包下）
 * Lazy.kt
 * Infix1.kt
 * Infix2.kt
