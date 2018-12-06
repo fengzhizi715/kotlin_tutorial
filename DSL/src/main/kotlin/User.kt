@@ -7,7 +7,5 @@ class User{
     var password: String?=null
     var addresses:Address?=null
 
-    override fun toString(): String {
-        return "name=$name,password=$password"
-    }
+    override fun toString() = "name=$name,password=$password"
 }

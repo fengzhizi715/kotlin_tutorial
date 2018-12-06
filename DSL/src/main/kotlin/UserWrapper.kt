@@ -19,7 +19,6 @@ class UserWrapper{
 
 fun user(init: UserWrapper.() -> Unit):User {
 
-
     val wrapper = UserWrapper()
     wrapper.init()
 
