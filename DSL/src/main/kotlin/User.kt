@@ -8,6 +8,6 @@ class User{
     var addresses:Address?=null
 
     override fun toString(): String {
-        return "name:$name,password=$password"
+        return "name=$name,password=$password"
     }
 }

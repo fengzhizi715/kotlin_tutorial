@@ -5,7 +5,7 @@ fun main(args: Array<String>) {
 
     val user = User().apply {
 
-        name = "Tony"
+        name = "Tony"  // 此处省略了this，完整的应该是this.name= "Tony"
         password = "123456"
     }
 
