@@ -8,7 +8,7 @@ class UserWrapper{
     var name:String?=null
     var password: String?=null
 
-    fun address(init: Address.() -> Unit):Address {
+    fun address(init: Address.() -> Unit):Address { // 类似于 apply 函数，返回 address 对象本身
 
         address.init()
         return address
