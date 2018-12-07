@@ -12,13 +12,13 @@ import java.io.Serializable
  */
 data class PM25Model(
 
-        var aqi: Int,
-        var area: String,
-        var pm2_5: Int,
-        var pm2_5_24h: Int,
-        var position_name: String,
-        var primary_pollutant: String,
-        var quality: String,
-        var station_code: String,
-        var time_point: String
+        var aqi: Int = 0,
+        var area: String = "",
+        var pm2_5: Int = 0,
+        var pm2_5_24h: Int = 0,
+        var position_name: String = "",
+        var primary_pollutant: String = "",
+        var quality: String = "",
+        var station_code: String = "",
+        var time_point: String = ""
 ) : Serializable

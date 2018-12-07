@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.kotlin.tutorial.retrofit.app2.R
 import com.kotlin.tutorial.retrofit.app2.config.Constant
+import com.kotlin.tutorial.retrofit.app2.extension.errorReturn
 import com.kotlin.tutorial.retrofit.app2.http.RetrofitManager
 import com.kotlin.tutorial.retrofit.app2.model.PM25Model
 import com.kotlin.tutorial.retrofit.app2.model.SO2Model
@@ -49,12 +50,14 @@ class MainActivity : AppCompatActivity() {
 
                         if ("南门" == model.position_name) {
 
+
                             return@flatMap Maybe.just(model)
                         }
                     }
 
                     Maybe.empty<PM25Model>()
                 }
+                .errorReturn(PM25Model())
 
         val so2Maybe = apiService.so2(Constant.CITY_ID, Constant.TOKEN)
                 .compose(RxJavaUtils.maybeToMain<List<SO2Model>>())
