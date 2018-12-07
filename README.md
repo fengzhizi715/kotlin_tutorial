@@ -6,7 +6,7 @@
 此 repository 是本人掘金的小册《Android 进阶：基于 Kotlin 的 Android App 开发实践》中的相关的例子。
 
 小册主要内容：
-![](https://user-gold-cdn.xitu.io/2018/9/17/165e3210c5d82900?w=2948&h=2580&f=png&s=399321)
+![](https://user-gold-cdn.xitu.io/2018/12/6/16782387baa6d6e6?w=2948&h=2580&f=png&s=399259)
 
 
 小册地址：https://juejin.im/book/5af1c5ee6fb9a07a9f018368
@@ -94,11 +94,6 @@ Dagger2 工程中 app1、app2 和 app3 三个module都可以编译成单独的Ap
 
 ## 四. 扩展学习篇
 
-### Kotlin 的协程及其使用
-Coroutines1 是Java工程，使用IntelliJ Idea打开。
-
-Coroutines2 是Android工程，使用Android Studio打开。
-
 ### Kotlin 的DSL及其使用
 DSL 是Java工程，使用IntelliJ Idea打开。
 
@@ -108,6 +103,12 @@ DSL 是Java工程，使用IntelliJ Idea打开。
 * Invoke.kt
 * Dependency.kt
 * Assertion.kt
+
+### Kotlin 的协程及其使用
+Coroutines1 是Java工程，使用IntelliJ Idea打开。
+
+Coroutines2 是Android工程，使用Android Studio打开。
+
 
 # 开发工具
 

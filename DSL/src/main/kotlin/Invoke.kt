@@ -6,7 +6,8 @@ operator fun String.invoke(fn: String.() -> Unit) {
 }
 
 fun main(args: Array<String>) {
-    "hello dsl" {
+
+    "hello dsl" { // 此处省略了.invoke
 
         println(this)
     }
