@@ -13,7 +13,7 @@
 
 # 各小节的例子
 
-(目前正在将原先 Kotlin 1.2的例子逐步迁移到 Kotlin 1.3,预计本周末能全部迁移完成)
+(目前正在将原先 Kotlin 1.2的例子逐步迁移到 Kotlin 1.3)
 
 ## 一. 基础篇
 Basic是Java工程，使用IntelliJ Idea打开。
