@@ -5,22 +5,22 @@ package classes
  */
 class Constructor4(str:String) {
 
-    init {
+    init { // 初始化块
 
         println("$str"+1)
     }
 
-    init {
+    init { // 初始化块
 
         println("$str"+2)
     }
 
-    constructor(str1: String, str2: String):this(str1) { // 调用主构造函数以及多个初始化块
+    constructor(str1: String, str2: String):this(str1) { // 调用主构造函数以及按照顺序调用多个初始化块
 
         println("$str1 $str2")
     }
 
-    init {
+    init { // 初始化块
 
         println("$str"+3)
     }
