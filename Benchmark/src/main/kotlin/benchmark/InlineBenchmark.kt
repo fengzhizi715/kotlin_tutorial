@@ -14,34 +14,37 @@ import java.util.concurrent.TimeUnit
 @Threads(8) // 每个进程中的测试线程数
 @Fork(2)  // 进行 fork 的次数，表示 JMH 会 fork 出两个进程来进行测试
 @OutputTimeUnit(TimeUnit.MILLISECONDS) // 基准测试结果的时间类型
-open class SequenceBenchmark {
+open class InlineBenchmark {
 
-    @Benchmark
-    fun testSequence():Int {
+    fun nonInlined(block: () -> Unit) { // 不用内联的函数
+        block()
+    }
 
-        return sequenceOf(1,2,3,4,5,6,7,8,9,10)
-                .map{ it * 2 }
-                .filter { it % 3  == 0 }
-                .map{ it+1 }
-                .sum()
+    inline fun inlined(block: () -> Unit) { // 使用内联的函数
+        block()
     }
 
     @Benchmark
-    fun testList():Int {
-
-        return listOf(1,2,3,4,5,6,7,8,9,10)
-                .map{ it * 2 }
-                .filter { it % 3  == 0 }
-                .map{ it+1 }
-                .sum()
+    fun testNonInlined() {
+        nonInlined {
+            println("")
+        }
     }
+
+    @Benchmark
+    fun testInlined() {
+        inlined {
+            println("")
+        }
+    }
+
 }
 
 fun main() {
 
     val options = OptionsBuilder()
-            .include(SequenceBenchmark::class.java.simpleName)
-            .output("benchmark_sequence.log")
+            .include(InlineBenchmark::class.java.simpleName)
+            .output("benchmark_inline.log")
             .build()
     Runner(options).run()
 }
