@@ -5,6 +5,6 @@ package delegates
  */
 class User(val id: Int) {
 
-    var name: String by DatabaseDelegate("name", id)
-    var password: String by DatabaseDelegate("password", id)
+    var name: String by DatabaseDelegate("name", id) // 使用委托属性
+    var password: String by DatabaseDelegate("password", id) // 使用委托属性
 }

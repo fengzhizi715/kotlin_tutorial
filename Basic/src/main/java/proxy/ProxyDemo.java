@@ -18,6 +18,9 @@ interface Base{
     void print();
 }
 
+/**
+ * 委托类
+ */
 class BaseImpl implements Base {
 
     private int x;
