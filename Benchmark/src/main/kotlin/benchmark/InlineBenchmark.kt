@@ -26,6 +26,7 @@ open class InlineBenchmark {
 
     @Benchmark
     fun testNonInlined() {
+
         nonInlined {
             println("")
         }
@@ -33,6 +34,7 @@ open class InlineBenchmark {
 
     @Benchmark
     fun testInlined() {
+
         inlined {
             println("")
         }
