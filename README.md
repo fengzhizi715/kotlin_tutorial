@@ -14,7 +14,7 @@
 # 各小节的例子
 
 ## 一. 基础篇
-Basic是Java工程，使用IntelliJ Idea打开。
+Basic 是Java工程，使用IntelliJ Idea打开。
 
 ### Kotlin 的函数
 
@@ -108,6 +108,11 @@ Coroutines1 是Java工程，使用IntelliJ Idea打开。
 Coroutines2 是Android工程，使用Android Studio打开。
 
 ## 五. 番外篇
+Benchmark 是Java工程，使用IntelliJ Idea打开。
+
+* SequenceBenchmark.kt
+* InlineBenchmark.kt
+* CoroutinesBenchmark.kt
 
 
 # 开发工具
