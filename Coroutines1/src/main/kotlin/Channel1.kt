@@ -7,9 +7,10 @@ import kotlinx.coroutines.channels.Channel
 fun main(args: Array<String>) = runBlocking {
 
     val channel = Channel<Int>()  //定义一个通道
+
     launch(Dispatchers.Default) {
 
-        repeat(5) {
+        repeat(5) { // 重复5次发送消息，相当于 for(int i=0;i<5;i++)
 
             i ->
             delay(200)
@@ -27,5 +28,5 @@ fun main(args: Array<String>) = runBlocking {
 
     delay(2000)
 
-    println("Done!")
+    println("Receive Done!")
 }

@@ -16,7 +16,7 @@ fun main(args: Array<String>) = runBlocking {
             delay(200)
             channel.send((i+1) * (i+1))
 
-            if (i==2) {
+            if (i==2) { // 发送3次后关闭
 
                 channel.close()
             }
@@ -24,17 +24,18 @@ fun main(args: Array<String>) = runBlocking {
     }
 
     launch(Dispatchers.Default) {
+
         repeat(5) {
 
             try {
                 println(channel.receive())
             }catch (e: ClosedReceiveChannelException){
-                println("There is a ClosedReceiveChannelException.")
+                println("There is a ClosedReceiveChannelException.") // channel 异常则打印
             }
         }
     }
 
     delay(2000)
 
-    println("Done!")
+    println("Receive Done!")
 }
