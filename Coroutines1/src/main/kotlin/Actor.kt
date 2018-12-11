@@ -15,8 +15,9 @@ fun main(args: Array<String>) = runBlocking<Unit> {
         }
     }
 
-    for (x in 1..10) {
-        summer.send(x)
+    repeat(10) {
+
+        i->summer.send(i+1) // 发送从1到10
     }
 
     summer.close()

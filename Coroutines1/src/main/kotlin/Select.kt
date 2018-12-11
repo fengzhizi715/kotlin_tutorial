@@ -13,7 +13,7 @@ import kotlin.coroutines.CoroutineContext
 fun produce1(context: CoroutineContext) = GlobalScope.produce<String>(context) {
 
     while (true) {
-        delay(300)
+        delay(400)
         send("Tony")
     }
 }
@@ -21,32 +21,33 @@ fun produce1(context: CoroutineContext) = GlobalScope.produce<String>(context) {
 fun produce2(context: CoroutineContext) = GlobalScope.produce<String>(context) {
 
     while (true) {
-        delay(500)
+        delay(600)
         send("Monica")
     }
 }
 
-suspend fun selectProduces(tony: ReceiveChannel<String>, monica: ReceiveChannel<String>) {
+suspend fun selectProduces(channel1: ReceiveChannel<String>, channel2: ReceiveChannel<String>) {
 
     select<Unit> {
-        tony.onReceive { value ->  // this is the first select clause
-            println("This is $value")
+
+        channel1.onReceive {
+            println("This is $it")
         }
 
-        monica.onReceive { value ->  // this is the second select clause
-            println("This is $value")
+        channel2.onReceive {
+            println("This is $it")
         }
     }
 }
 
-fun main(args: Array<String>) = runBlocking<Unit> {
+fun main(args: Array<String>) = runBlocking {
 
     val tony = produce1(coroutineContext)
     val monica = produce2(coroutineContext)
 
-    repeat(5) {
+    repeat(10) {
         selectProduces(tony, monica)
     }
 
-    coroutineContext.cancelChildren() // cancel tony & monica coroutines
+    coroutineContext.cancelChildren() // 关闭子协程
 }
