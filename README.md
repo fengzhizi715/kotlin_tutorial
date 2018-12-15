@@ -118,10 +118,10 @@ Coroutines1 是Java工程，使用IntelliJ Idea打开。
 * CoroutineDispatchers2.kt: 在使用 Unconfined 的协程，在 delay 前后，并没有运行在同一线程中。
 * ChildCoroutine1.kt: 使用一个协程的 coroutineContext 来启动另一个协程，新协程的 Job 就会成为父协程 Job 的孩子。
 * ChildCoroutine2.kt: 父协程会等待子协程执行完。
-* ChildCoroutine3.kt
-* ChildCoroutine4.kt
-* CoroutineContext+Job.kt
-* Channel1.kt
+* ChildCoroutine3.kt: 在已有的协程中使用 GlobalScope.launch 来创建协程，并不是子协程。
+* ChildCoroutine4.kt: 协程支持多个 CoroutineContext 进行+操作，使得一个协程具有多个 CoroutineContext 的特性。
+* CoroutineContext+Job.kt: 如果 CoroutineContext 与 Job 对象相加，Job 对象可以直接管理该协程。
+* Channel1.kt: 使用 channel 发送消息，并进行接收。
 * Channel2.kt
 * Channel3.kt
 * Channel4.kt
