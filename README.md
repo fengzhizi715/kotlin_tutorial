@@ -95,12 +95,20 @@ Dagger2 工程中 app1、app2 和 app3 三个module都可以编译成单独的Ap
 ### Kotlin 的DSL及其使用
 DSL 是Java工程，使用IntelliJ Idea打开。
 
-* Receiver.kt: 带接收者的函数类型
-* Apply.kt: 演示 apply 函数
-* UserWrapper.kt: 模拟 apply 函数，创建自己第一个 DSL
-* Invoke.kt: 对 String 添加一个扩展函数invoke，并结合带接收者的 Lambda 作为参数
-* Dependency.kt: 模拟 Gradle 添加库的依赖
-* Assertion.kt（test目录下）: 使用中缀表达式实现 DSL
+
+| 类名      |      用途     |  备注 |
+|----------|:-------------:|------|
+|Receiver.kt|带接收者的函数类型||
+|Apply.kt|演示 apply 函数||
+|UserWrapper.kt|模拟 apply 函数，创建自己第一个 DSL||
+|Invoke.kt|对 String 添加一个扩展函数invoke，并结合带接收者的 Lambda 作为参数||
+|Dependency.kt|模拟 Gradle 添加库的依赖||
+|Assertion.kt|使用中缀表达式实现 DSL|在test目录下|
+
+作者：cxuan
+链接：https://www.jianshu.com/p/7a655e5345b2
+來源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
 
 ### Kotlin 的协程及其使用
 Coroutines1 是Java工程，使用IntelliJ Idea打开。
