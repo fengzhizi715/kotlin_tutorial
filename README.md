@@ -105,10 +105,10 @@ DSL 是Java工程，使用IntelliJ Idea打开。
 ### Kotlin 的协程及其使用
 Coroutines1 是Java工程，使用IntelliJ Idea打开。
 
-* Launch.kt
-* Async1.kt
-* Async2.kt
-* Async3.kt
+* Launch.kt: 使用 launch 的 hello world 版本
+* Async1.kt: 使用 async 的 hello world 版本
+* Async2.kt: 使用 async 创建的协程拥有返回值
+* Async3.kt: 使用 async 的 start 参数用于指定的协程何时开始
 * RunBlocking.kt
 * Delay.kt
 * Yield.kt
@@ -141,9 +141,9 @@ Benchmark 是Java工程，使用IntelliJ Idea打开。
 
 # 开发工具
 
-Android的工程采用Android Studio3.2开发，gradle版本是4.4。
+Android 的工程采用 Android Studio3.2 开发，gradle 版本是4.4。
 
-Java的工程采用Intellij IDEA 2018.3 社区版开发。
+Java 的工程采用 Intellij IDEA 2018.3 社区版开发。
 
 IDEA 采用 Kotlin Plugin 版本 v1.3.10-release-IJ2018.3-1
 
