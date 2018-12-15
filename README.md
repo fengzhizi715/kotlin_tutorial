@@ -96,8 +96,8 @@ Dagger2 工程中 app1、app2 和 app3 三个module都可以编译成单独的Ap
 DSL 是Java工程，使用IntelliJ Idea打开。
 
 
-| 类名      |      用途     |  备注 |
-|----------|:-------------:|------|
+| 类名      |      用途    |  备注 |
+|----------|-------------|------|
 |Receiver.kt|带接收者的函数类型||
 |Apply.kt|演示 apply 函数||
 |UserWrapper.kt|模拟 apply 函数，创建自己第一个 DSL||
