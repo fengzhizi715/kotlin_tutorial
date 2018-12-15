@@ -113,29 +113,31 @@ DSL 是Java工程，使用IntelliJ Idea打开。
 ### Kotlin 的协程及其使用
 Coroutines1 是Java工程，使用IntelliJ Idea打开。
 
-* Launch.kt: 使用 launch 的 hello world 版本
-* Async1.kt: 使用 async 的 hello world 版本
-* Async2.kt: 使用 async 创建的协程拥有返回值
-* Async3.kt: 使用 async 的 start 参数用于指定的协程何时开始
-* RunBlocking.kt: 使用 runBlocking 的 hello world 版本
-* Delay.kt: 挂起函数 delay() 的使用
-* Yield.kt: 挂起函数 yield() 的使用
-* WithContext.kt: 挂起函数 withContext 的使用 
-* CoroutineScope.kt: 挂起函数 coroutineScope 的使用
-* CoroutineDispatchers1.kt: 创建多个协程并使用不同的协程调度器
-* CoroutineDispatchers2.kt: 在使用 Unconfined 的协程，在 delay 前后，并没有运行在同一线程中。
-* ChildCoroutine1.kt: 使用一个协程的 coroutineContext 来启动另一个协程，新协程的 Job 就会成为父协程 Job 的孩子。
-* ChildCoroutine2.kt: 父协程会等待子协程执行完。
-* ChildCoroutine3.kt: 在已有的协程中使用 GlobalScope.launch 来创建协程，并不是子协程。
-* ChildCoroutine4.kt: 协程支持多个 CoroutineContext 进行+操作，使得一个协程具有多个 CoroutineContext 的特性。
-* CoroutineContext+Job.kt: 如果 CoroutineContext 与 Job 对象相加，Job 对象可以直接管理该协程。
-* Channel1.kt: 使用 channel 发送消息，并进行接收。
-* Channel2.kt: channel 关闭的演示。
-* Channel3.kt: channel 中采用 Pipelines 的演示。
-* Channel4.kt: 创建带有缓冲区的 channel
-* Channel5.kt: 在演示 channel 时，使用挂起函数 delay()
-* Actor.kt: Actor 内部是从 channel 接收消息。
-* Select.kt: Select 表达式的演示。
+| 类名      |      用途    |  备注 |
+|----------|-------------|------|
+|Launch.kt|使用 launch 的 hello world 版本|
+|Async1.kt|使用 async 的 hello world 版本|
+|Async2.kt|使用 async 创建的协程拥有返回值|
+|Async3.kt|使用 async 的 start 参数用于指定的协程何时开始|
+|RunBlocking.kt|使用 runBlocking 的 hello world 版本|
+|Delay.kt|挂起函数 delay() 的使用|
+|Yield.kt|挂起函数 yield() 的使用|
+|WithContext.kt|挂起函数 withContext 的使用|
+|CoroutineScope.kt|挂起函数 coroutineScope 的使用|
+|CoroutineDispatchers1.kt|创建多个协程并使用不同的协程调度器|
+|CoroutineDispatchers2.kt|在使用 Unconfined 的协程，在 delay 前后，并没有运行在同一线程中。|
+|ChildCoroutine1.kt|使用一个协程的 coroutineContext 来启动另一个协程，新协程的 Job 就会成为父协程 Job 的孩子。|
+|ChildCoroutine2.kt|父协程会等待子协程执行完。|
+|ChildCoroutine3.kt|在已有的协程中使用 GlobalScope.launch 来创建协程，并不是子协程。|
+|ChildCoroutine4.kt|协程支持多个 CoroutineContext 进行+操作，使得一个协程具有多个 CoroutineContext 的特性。|
+|CoroutineContext+Job.kt|如果 CoroutineContext 与 Job 对象相加，Job 对象可以直接管理该协程。|
+|Channel1.kt|使用 channel 发送消息，并进行接收。|
+|Channel2.kt|channel 关闭的演示。|
+|Channel3.kt|channel 中采用 Pipelines 的演示。|
+|Channel4.kt|创建带有缓冲区的 channel|
+|Channel5.kt|在演示 channel 时，使用挂起函数 delay()|
+|Actor.kt|Actor 内部是从 channel 接收消息。|
+|Select.kt|Select 表达式的演示。|
 
 Coroutines2 是Android工程，使用Android Studio打开。
 
