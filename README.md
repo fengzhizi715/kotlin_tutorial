@@ -112,12 +112,12 @@ Coroutines1 是Java工程，使用IntelliJ Idea打开。
 * RunBlocking.kt: 使用 runBlocking 的 hello world 版本
 * Delay.kt: 挂起函数 delay() 的使用
 * Yield.kt: 挂起函数 yield() 的使用
-* WithContext.kt:挂起函数 withContext 的使用 
+* WithContext.kt: 挂起函数 withContext 的使用 
 * CoroutineScope.kt: 挂起函数 coroutineScope 的使用
 * CoroutineDispatchers1.kt: 创建多个协程并使用不同的协程调度器
-* CoroutineDispatchers2.kt
-* ChildCoroutine1.kt
-* ChildCoroutine2.kt
+* CoroutineDispatchers2.kt: 在使用 Unconfined 的协程，在 delay 前后，并没有运行在同一线程中。
+* ChildCoroutine1.kt: 使用一个协程的 coroutineContext 来启动另一个协程，新协程的 Job 就会成为父协程 Job 的孩子。
+* ChildCoroutine2.kt: 父协程会等待子协程执行完。
 * ChildCoroutine3.kt
 * ChildCoroutine4.kt
 * CoroutineContext+Job.kt
