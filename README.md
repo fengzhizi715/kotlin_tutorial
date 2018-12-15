@@ -109,12 +109,12 @@ Coroutines1 是Java工程，使用IntelliJ Idea打开。
 * Async1.kt: 使用 async 的 hello world 版本
 * Async2.kt: 使用 async 创建的协程拥有返回值
 * Async3.kt: 使用 async 的 start 参数用于指定的协程何时开始
-* RunBlocking.kt
-* Delay.kt
-* Yield.kt
-* WithContext.kt
-* CoroutineScope.kt
-* CoroutineDispatchers1.kt
+* RunBlocking.kt: 使用 runBlocking 的 hello world 版本
+* Delay.kt: 挂起函数 delay() 的使用
+* Yield.kt: 挂起函数 yield() 的使用
+* WithContext.kt:挂起函数 withContext 的使用 
+* CoroutineScope.kt: 挂起函数 coroutineScope 的使用
+* CoroutineDispatchers1.kt: 创建多个协程并使用不同的协程调度器
 * CoroutineDispatchers2.kt
 * ChildCoroutine1.kt
 * ChildCoroutine2.kt
