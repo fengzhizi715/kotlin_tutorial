@@ -122,12 +122,12 @@ Coroutines1 是Java工程，使用IntelliJ Idea打开。
 * ChildCoroutine4.kt: 协程支持多个 CoroutineContext 进行+操作，使得一个协程具有多个 CoroutineContext 的特性。
 * CoroutineContext+Job.kt: 如果 CoroutineContext 与 Job 对象相加，Job 对象可以直接管理该协程。
 * Channel1.kt: 使用 channel 发送消息，并进行接收。
-* Channel2.kt
-* Channel3.kt
-* Channel4.kt
-* Channel5.kt
-* Actor.kt
-* Select.kt
+* Channel2.kt: channel 关闭的演示。
+* Channel3.kt: channel 中采用 Pipelines 的演示。
+* Channel4.kt: 创建带有缓冲区的 channel
+* Channel5.kt: 在演示 channel 时，使用挂起函数 delay()
+* Actor.kt: Actor 内部是从 channel 接收消息。
+* Select.kt: Select 表达式的演示。
 
 Coroutines2 是Android工程，使用Android Studio打开。
 
