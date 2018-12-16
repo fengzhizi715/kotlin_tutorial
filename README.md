@@ -21,9 +21,9 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
-|Args1.kt||
-|Args2.kt||
-|Args3.kt||
+|Args1.kt|可变数量的参数的演示|
+|Args2.kt|使用展开运算符`*`解包数组|
+|Args3.kt|如果可变参数不是函数的最后一个参数，后面的参数需要通过命名参数|
 |Nothing.kt|Nothing类型的演示|
 |LocalFunction.kt|局部函数的演示|
 |Recursive.kt|普通的尾递归函数|
