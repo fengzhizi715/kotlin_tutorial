@@ -19,14 +19,16 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 
 ### Kotlin 的函数
 
-* Args1.kt
-* Args2.kt
-* Args3.kt
-* Nothing.kt
-* LocalFunction.kt
-* Recursive.kt
-* TailRecursive.kt
-* Main.kt
+| 类名      |      用途    |  备注 |
+|----------|-------------|------|
+|Args1.kt||
+|Args2.kt||
+|Args3.kt||
+|Nothing.kt|Nothing类型的演示|
+|LocalFunction.kt|局部函数的演示|
+|Recursive.kt|普通的尾递归函数|
+|TailRecursive.kt|使用tailrec关键词的尾递归函数|
+|Main.kt|无参 main 函数|
 
 ### Kotlin 的类
 
@@ -99,7 +101,6 @@ Dagger2 工程中 app1、app2 和 app3 三个module都可以编译成单独的Ap
 ### Kotlin 的DSL及其使用
 
 DSL 是Java工程，使用IntelliJ Idea打开。
-
 
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
