@@ -83,10 +83,9 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 |Delegate.kt|Kotlin 委托模式的演示|在delegates包下
 |DatabaseDelegate|创建 DatabaseDelegate 来管理 User 的属性，并模拟数据库的操作|在delegates包下
 |Lazy.kt| lazy() 函数的演示|
-|Infix1.kt||
-|Infix2.kt||
-|Invoke.kt||
-|Assertion.kt||
+|Invoke.kt|重载 invoke 函数的演示|
+|Infix1.kt|在扩展函数中使用中缀表达式|
+|Infix2.kt|在成员函数中使用中缀表达式|
 
 ## 三. 实战篇
 
