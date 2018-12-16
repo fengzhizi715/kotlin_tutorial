@@ -62,8 +62,10 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 
 ### 内联函数和内联属性
 
-* Inline.kt
-* Noinline.kt
+| 类名      |      用途    |  备注 |
+|----------|-------------|------|
+|Inline.kt|使用内联函数和非内联函数的演示|
+|Noinline.kt|使用noinline来修饰不需要内联的函数类型的参数|
 
 ### 扩展函数和扩展属性
 
