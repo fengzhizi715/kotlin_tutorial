@@ -24,10 +24,10 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 |Args1.kt|可变数量的参数的演示|
 |Args2.kt|使用展开运算符`*`解包数组|
 |Args3.kt|如果可变参数不是函数的最后一个参数，后面的参数需要通过命名参数来传值|
-|Nothing.kt|Nothing类型的演示|
+|Nothing.kt|Nothing 类型的演示|
 |LocalFunction.kt|局部函数的演示|
 |Recursive.kt|普通的尾递归函数|
-|TailRecursive.kt|使用tailrec关键词的尾递归函数|
+|TailRecursive.kt|使用 tailrec 关键词的尾递归函数|
 |Main.kt|无参 main 函数|
 
 ### Kotlin 的类
@@ -35,7 +35,7 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
 |Constructor1.kt|使用主构造函数和 init 初始化块|在classes包下
-|Constructor2.kt|使用constructor关键字作为构造函数的函数名|在classes包下
+|Constructor2.kt|使用 constructor 关键字作为构造函数的函数名|在classes包下
 |Constructor3.kt|使用主、次构造函数|在classes包下
 |Constructor4.kt|使用多个 init 初始化块|在classes包下
 |OutterAndNested.kt|嵌套类的演示|在classes包下
@@ -65,14 +65,16 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
 |Inline.kt|使用内联函数和非内联函数的演示|
-|Noinline.kt|使用noinline来修饰不需要内联的函数类型的参数|
+|Noinline.kt|使用 noinline 来修饰不需要内联的函数类型的参数|
 
 ### 扩展函数和扩展属性
 
-* Extension1.kt
-* Extension2.kt
-* Extension3.kt
-* Polymorphism.kt
+| 类名      |      用途    |  备注 |
+|----------|-------------|------|
+|Extension1.kt|对 String 类增加一个 checkEmail() 函数|
+|Extension2.kt||
+|Extension3.kt||
+|Polymorphism.kt||
 
 ### 委托、运算符重载以及中缀表达式
 
