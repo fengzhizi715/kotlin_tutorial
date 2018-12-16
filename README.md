@@ -72,9 +72,9 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
 |Extension1.kt|对 String 类增加一个 checkEmail() 函数|
-|Extension2.kt||
-|Extension3.kt||
-|Polymorphism.kt||
+|Extension2.kt|扩展函数跟原先的函数重名并且参数都相同|
+|Extension3.kt|类的扩展属性的演示|
+|Polymorphism.kt|Kotlin 的扩展函数不具有多态性|
 
 ### 委托、运算符重载以及中缀表达式
 
