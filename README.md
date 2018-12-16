@@ -34,7 +34,7 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
-|Constructor1.kt||在classes包下
+|Constructor1.kt|使用主构造函数和init初始化块|在classes包下
 |Constructor2.kt||在classes包下
 |Constructor3.kt||在classes包下
 |Constructor4.kt||在classes包下
