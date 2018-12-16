@@ -32,19 +32,19 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 
 ### Kotlin 的类
 
-classes 包下：
-
-* Constructor1.kt
-* Constructor2.kt
-* Constructor3.kt
-* Constructor4.kt
-* OutterAndNested.kt
-* OutterAndInner.kt
-* Color.kt
-* CompanionObject.kt
-* DataClass.kt
-* Singleton.kt
-* SealedClass.kt
+| 类名      |      用途    |  备注 |
+|----------|-------------|------|
+|Constructor1.kt||在classes包下
+|Constructor2.kt||在classes包下
+|Constructor3.kt||在classes包下
+|Constructor4.kt||在classes包下
+|OutterAndNested.kt||在classes包下
+|OutterAndInner.kt||在classes包下
+|Color.kt||在classes包下
+|CompanionObject.kt||在classes包下
+|DataClass.kt||在classes包下
+|Singleton.kt||在classes包下
+|SealedClass.kt||在classes包下
 
 ## 二. 进阶篇
 
