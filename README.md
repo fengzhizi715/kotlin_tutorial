@@ -78,13 +78,15 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 
 ### 委托、运算符重载以及中缀表达式
 
-* Delegate.kt （delegates包下）
-* DatabaseDelegate（delegates包下）
-* Lazy.kt
-* Infix1.kt
-* Infix2.kt
-* Invoke.kt
-* Assertion.kt
+| 类名      |      用途    |  备注 |
+|----------|-------------|------|
+|Delegate.kt|Kotlin 委托模式的演示|在delegates包下
+|DatabaseDelegate|创建 DatabaseDelegate 来管理 User 的属性，并模拟数据库的操作|在delegates包下
+|Lazy.kt| lazy() 函数的演示|
+|Infix1.kt||
+|Infix2.kt||
+|Invoke.kt||
+|Assertion.kt||
 
 ## 三. 实战篇
 
