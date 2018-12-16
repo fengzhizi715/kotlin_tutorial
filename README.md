@@ -145,9 +145,11 @@ Coroutines2 是Android工程，使用Android Studio打开。
 ## 五. 番外篇
 Benchmark 是Java工程，使用IntelliJ Idea打开。
 
-* SequenceBenchmark.kt
-* InlineBenchmark.kt
-* CoroutinesBenchmark.kt
+| 类名      |      用途    |  备注 |
+|----------|-------------|------|
+|SequenceBenchmark.kt|sequence和list经过多次链式调用后的性能比较|
+|InlineBenchmark.kt|使用内联和非内联的性能比较|
+|CoroutinesBenchmark.kt|使用RxJava2和Coroutines的性能比较|
 
 
 # 开发工具
