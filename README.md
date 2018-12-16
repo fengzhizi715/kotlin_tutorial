@@ -14,6 +14,7 @@
 # 各小节的例子
 
 ## 一. 基础篇
+
 Basic 是Java工程，使用IntelliJ Idea打开。
 
 ### Kotlin 的函数
@@ -44,6 +45,7 @@ classes 包下：
 * SealedClass.kt
 
 ## 二. 进阶篇
+
 Basic 是Java工程，使用IntelliJ Idea打开。
 
 ### 高阶函数和Lambda表达式
@@ -81,11 +83,13 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 ## 三. 实战篇
 
 ### Kotlin 整合网络框架
+
 Retrofit 是Android工程，使用Android Studio打开。
 
 Retrofit 工程中 app1 和 app2 两个module都可以编译成单独的App。
 
 ### Kotlin 整合Dagger
+
 Dagger2是Android工程，使用Android Studio打开。
 
 Dagger2 工程中 app1、app2 和 app3 三个module都可以编译成单独的App。
@@ -93,6 +97,7 @@ Dagger2 工程中 app1、app2 和 app3 三个module都可以编译成单独的Ap
 ## 四. 扩展学习篇
 
 ### Kotlin 的DSL及其使用
+
 DSL 是Java工程，使用IntelliJ Idea打开。
 
 
@@ -105,10 +110,6 @@ DSL 是Java工程，使用IntelliJ Idea打开。
 |Dependency.kt|模拟 Gradle 添加库的依赖||
 |Assertion.kt|使用中缀表达式实现 DSL|在test目录下|
 
-作者：cxuan
-链接：https://www.jianshu.com/p/7a655e5345b2
-來源：简书
-简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
 
 ### Kotlin 的协程及其使用
 Coroutines1 是Java工程，使用IntelliJ Idea打开。
