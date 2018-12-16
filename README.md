@@ -52,13 +52,15 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 
 ### 高阶函数和Lambda表达式
 
-* HigherOrderFunctions1.kt
-* HigherOrderFunctions2.kt
-* HigherOrderFunctions3.kt
-* Sequence.kt
-* Lambda.kt
-* MethodReference.kt
-* SAM.kt
+| 类名      |      用途    |  备注 |
+|----------|-------------|------|
+|HigherOrderFunctions1.kt|函数类型的演示|
+|HigherOrderFunctions2.kt|使用高阶函数实现求和、求平方和、求立方和|
+|HigherOrderFunctions3.kt|函数作为其他函数的返回值|
+|Lambda.kt|filter 的使用|
+|Sequence.kt|Sequence 的演示|
+|MethodReference.kt|使用方法引用对 User 对象按照 name 来进行排序|
+|SAM.kt|SAM 转换的演示|
 
 ### 内联函数和内联属性
 
