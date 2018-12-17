@@ -8,7 +8,6 @@ val Extension3.text:String
 
 
 fun main(args: Array<String>) {
-
     var extension3 = Extension3()
 
     println(extension3.text)

@@ -12,7 +12,6 @@ fun Child.foo() = println("this is from child")
 fun executeFoo(base: Base) = base.foo()
 
 fun main(args: Array<String>) {
-
     var base = Base()
     var child = Child()
 
