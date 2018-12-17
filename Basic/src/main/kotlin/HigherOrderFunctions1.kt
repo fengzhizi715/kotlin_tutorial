@@ -2,7 +2,6 @@
  * Created by tony on 2018/7/3.
  */
 fun main(args: Array<String>) {
-
     val sum = {
         x: Int, y: Int -> x + y
     }

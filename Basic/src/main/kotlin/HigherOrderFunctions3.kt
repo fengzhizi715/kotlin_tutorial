@@ -2,7 +2,6 @@
  * Created by tony on 2018/7/4.
  */
 fun sum(type: String): (Int, Int) -> Int {
-
     val identity = { x: Int -> x }
     val square = { x: Int -> x * x }
     val cube = { x: Int -> x * x * x }
@@ -17,7 +16,6 @@ fun sum(type: String): (Int, Int) -> Int {
 }
 
 fun main(args: Array<String>) {
-
     var identityFunction = sum("identity")
     println(identityFunction(1,10))
 
