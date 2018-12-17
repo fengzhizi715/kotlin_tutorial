@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
                     Maybe.empty<PM25Model>()
                 }
-                .errorReturn(PM25Model())
+                .errorReturn(PM25Model()) // 由于每小时token请求数的限制，可能会导致接口不返回数据。如果不返回数据，则使用默认的PM25Model
 
         val so2Maybe = apiService.so2(Constant.CITY_ID, Constant.TOKEN)
                 .compose(RxJavaUtils.maybeToMain<List<SO2Model>>())
@@ -78,6 +78,7 @@ class MainActivity : AppCompatActivity() {
 
                     Maybe.empty<SO2Model>()
                 }
+                .errorReturn(SO2Model()) // 由于每小时token请求数的限制，可能会导致接口不返回数据。如果不返回数据，则使用默认的SO2Model
 
 
         // 合并多个网络请求
@@ -91,12 +92,12 @@ class MainActivity : AppCompatActivity() {
 
         }).subscribe({
 
-            quality.setText("空气质量指数：" + it.pm2_5_quality)
-            pm2_5.setText("PM2.5 1小时内平均：" + it.pm2_5)
-            pm2_5_24h.setText("PM2.5 24小时滑动平均：" + it.pm2_5_24h)
+            quality.setText("空气质量指数：" + it.pm2_5_quality)        // 如果为空，表示使用了默认值
+            pm2_5.setText("PM2.5 1小时内平均：" + it.pm2_5)             // 如果为0，表示使用了默认值
+            pm2_5_24h.setText("PM2.5 24小时滑动平均：" + it.pm2_5_24h)  // 如果为0，表示使用了默认值
 
-            so2.setText("二氧化硫1小时平均：" + it.so2)
-            so2_24h.setText("二氧化硫24小时滑动平均：" + it.so2_24h)
+            so2.setText("二氧化硫1小时平均：" + it.so2)  // 如果为0，表示使用了默认值
+            so2_24h.setText("二氧化硫24小时滑动平均：" + it.so2_24h) // 如果为0，表示使用了默认值
         }, {
 
             println(it.message)
