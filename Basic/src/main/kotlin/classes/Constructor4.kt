@@ -30,7 +30,6 @@ class Constructor4(str:String) {
 }
 
 fun main(args: Array<String>) {
-
     val obj = Constructor4("hello","world")
     obj.foo()
 }

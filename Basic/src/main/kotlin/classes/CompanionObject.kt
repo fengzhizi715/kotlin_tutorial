@@ -19,7 +19,6 @@ class Student {
 }
 
 fun main(args: Array<String>) {
-
     Student.changeMarks("B")
     println(Student.printMarks())
 

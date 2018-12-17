@@ -16,7 +16,6 @@ fun greetMammal(mammal: Mammal) = when (mammal) {
 }
 
 fun main(args: Array<String>) {
-
     println(greetMammal(Dog("wangwang")))
     println(greetMammal(Horse("chitu")))
     println(greetMammal(Human("tony", "coder")))

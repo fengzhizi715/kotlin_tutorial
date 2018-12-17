@@ -9,6 +9,5 @@ object Singleton {
 }
 
 fun main(args: Array<String>) {
-
     Singleton.printlnHelloWorld()
 }

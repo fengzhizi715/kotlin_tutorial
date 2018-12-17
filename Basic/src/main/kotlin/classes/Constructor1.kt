@@ -15,7 +15,6 @@ class Constructor1 {
 }
 
 fun main(args: Array<String>) {
-
     val obj = Constructor1()
     obj.foo()
 }

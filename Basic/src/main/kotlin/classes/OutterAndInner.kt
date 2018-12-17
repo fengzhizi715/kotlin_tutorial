@@ -14,6 +14,5 @@ class Outter2 {
 }
 
 fun main(args: Array<String>) {
-
     Outter2().Inner().foo()
 }

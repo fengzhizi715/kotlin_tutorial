@@ -20,7 +20,6 @@ class Constructor3(str:String) {
 }
 
 fun main(args: Array<String>) {
-
     val obj = Constructor3("hello","world")
     obj.foo()
 }

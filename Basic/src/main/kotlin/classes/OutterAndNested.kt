@@ -14,6 +14,5 @@ class Outter1 {
 }
 
 fun main(args: Array<String>) {
-
     Outter1.Nested().foo()
 }

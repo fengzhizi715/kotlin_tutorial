@@ -8,7 +8,6 @@ data class Address(var street:String)
 data class User(var name:String,var password:String,var address: Address)
 
 fun main(args: Array<String>) {
-
     val user1 = User("tony","123456", Address("renming"))
 
     val user2 = user1.copy()
