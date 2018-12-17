@@ -9,7 +9,6 @@ fun doForever(): Nothing {
 }
 
 fun main(args: Array<String>) {
-
     doForever()
     println("done")
 }

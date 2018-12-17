@@ -21,20 +21,17 @@ fun validate(person: Person):Boolean {
 }
 
 fun printPerson(person:Person) {
-
     val name = person.name
     val password = person.password
 
     fun print() {
-
-        println("name=$name,password=$password")
+        println("name=$name,password=$password") // print() 函数直接访问了它外部函数 printPerson() 的局部变量。
     }
 
     print()
 }
 
 fun main(args: Array<String>) {
-
     val user1 = Person("tony","123456")
     println(validate(user1))
     printPerson(user1)
