@@ -10,13 +10,11 @@ fun doSomething2() {
 }
 
 inline fun noinlineExample(something1: () -> Unit, noinline something2: () -> Unit) {
-
     something1.invoke()
     something2.invoke()
 }
 
 fun main(args: Array<String>) {
-
     noinlineExample(
             ::doSomething1,
             ::doSomething2

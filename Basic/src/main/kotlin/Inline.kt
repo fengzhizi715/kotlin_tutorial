@@ -10,7 +10,6 @@ inline fun inlined(block: () -> Unit) {
 }
 
 fun main(args: Array<String>) {
-
     nonInlined {
         println("do something with nonInlined")
     }
