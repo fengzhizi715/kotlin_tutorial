@@ -18,7 +18,6 @@ open class SequenceBenchmark {
 
     @Benchmark
     fun testSequence():Int {
-
         return sequenceOf(1,2,3,4,5,6,7,8,9,10)
                 .map{ it * 2 }
                 .filter { it % 3  == 0 }
@@ -28,7 +27,6 @@ open class SequenceBenchmark {
 
     @Benchmark
     fun testList():Int {
-
         return listOf(1,2,3,4,5,6,7,8,9,10)
                 .map{ it * 2 }
                 .filter { it % 3  == 0 }
@@ -38,7 +36,6 @@ open class SequenceBenchmark {
 }
 
 fun main() {
-
     val options = OptionsBuilder()
             .include(SequenceBenchmark::class.java.simpleName)
             .output("benchmark_sequence.log")

@@ -26,7 +26,6 @@ open class InlineBenchmark {
 
     @Benchmark
     fun testNonInlined() {
-
         nonInlined {
             println("")
         }
@@ -34,7 +33,6 @@ open class InlineBenchmark {
 
     @Benchmark
     fun testInlined() {
-
         inlined {
             println("")
         }
@@ -43,7 +41,6 @@ open class InlineBenchmark {
 }
 
 fun main() {
-
     val options = OptionsBuilder()
             .include(InlineBenchmark::class.java.simpleName)
             .output("benchmark_inline.log")

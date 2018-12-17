@@ -26,13 +26,11 @@ open class CoroutinesBenchmark {
 
     @Setup
     fun prepare() {
-
         counter1.set(0)
         counter2.set(0)
     }
 
     fun calculate(counter:AtomicInteger): Double {
-
         val result = ArrayList<Int>()
 
         for (i in 0 until 10_000) {
@@ -45,7 +43,6 @@ open class CoroutinesBenchmark {
 
     @Benchmark
     fun testCoroutines() = runBlocking {
-
         calculate(counter1)
     }
 
@@ -55,7 +52,6 @@ open class CoroutinesBenchmark {
 }
 
 fun main() {
-
     val options = OptionsBuilder()
             .include(CoroutinesBenchmark::class.java.simpleName)
             .output("benchmark_coroutines.log")
