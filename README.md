@@ -17,7 +17,7 @@
 
 Basic 是Java工程，使用IntelliJ Idea打开。
 
-### Kotlin 的函数
+### 1.1 Kotlin 的函数
 
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
@@ -30,7 +30,7 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 |TailRecursive.kt|使用 tailrec 关键词的尾递归函数|
 |Main.kt|无参 main 函数|
 
-### Kotlin 的类
+### 1.2 Kotlin 的类
 
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
@@ -50,7 +50,7 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 
 Basic 是Java工程，使用IntelliJ Idea打开。
 
-### 高阶函数和Lambda表达式
+### 2.1 高阶函数和Lambda表达式
 
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
@@ -62,14 +62,14 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 |MethodReference.kt|使用方法引用对 User 对象按照 name 来进行排序|
 |SAM.kt|SAM 转换的演示|
 
-### 内联函数和内联属性
+### 2.2 内联函数和内联属性
 
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
 |Inline.kt|使用内联函数和非内联函数的演示|
 |Noinline.kt|使用 noinline 来修饰不需要内联的函数类型的参数|
 
-### 扩展函数和扩展属性
+### 2.3 扩展函数和扩展属性
 
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
@@ -78,7 +78,7 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 |Extension3.kt|类的扩展属性的演示|
 |Polymorphism.kt|Kotlin 的扩展函数不具有多态性|
 
-### 委托、运算符重载以及中缀表达式
+### 2.4 委托、运算符重载以及中缀表达式
 
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
@@ -91,13 +91,13 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 
 ## 三. 实战篇
 
-### Kotlin 整合网络框架
+### 3.1 Kotlin 整合网络框架
 
 Retrofit 是Android工程，使用Android Studio打开。
 
 Retrofit 工程中 app1 和 app2 两个module都可以编译成单独的App。
 
-### Kotlin 整合Dagger
+### 3.2 Kotlin 整合Dagger
 
 Dagger2是Android工程，使用Android Studio打开。
 
@@ -105,7 +105,7 @@ Dagger2 工程中 app1、app2 和 app3 三个module都可以编译成单独的Ap
 
 ## 四. 扩展学习篇
 
-### Kotlin 的DSL及其使用
+### 4.1 Kotlin 的DSL及其使用
 
 DSL 是Java工程，使用IntelliJ Idea打开。
 
@@ -119,7 +119,7 @@ DSL 是Java工程，使用IntelliJ Idea打开。
 |Assertion.kt|使用中缀表达式实现 DSL|在test目录下|
 
 
-### Kotlin 的协程及其使用
+### 4.2 Kotlin 的协程及其使用
 Coroutines1 是Java工程，使用IntelliJ Idea打开。
 
 | 类名      |      用途    |  备注 |
