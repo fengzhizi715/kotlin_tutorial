@@ -41,7 +41,8 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 |OutterAndNested.kt|嵌套类的演示|在classes包下
 |OutterAndInner.kt|内部类的演示|在classes包下
 |Color.kt|枚举类的演示|在classes包下
-|Singleton.kt|使用对象声明实现单例模式|在classes包下
+|Singleton1.kt|使用对象声明实现单例模式|在classes包下
+|Singleton2.kt|使用伴生对象实现单例模式|在classes包下
 |CompanionObject.kt|伴生对象的演示|在classes包下
 |DataClass.kt|数据类的演示|在classes包下
 |SealedClass.kt|密封类的演示|在classes包下
