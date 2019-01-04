@@ -7,17 +7,7 @@ package classes
 class Singleton2 private constructor() {
 
     companion object {
-
-        private var instance: Singleton2? = null
-            get() {
-                if (field == null) {
-                    field = Singleton2()
-                }
-                return field
-            }
-
-        @Synchronized
-        fun get() = instance!!
+        val instance: Singleton2 by lazy { Singleton2() }
     }
 
     fun printlnHelloWorld() = println("hello world")
@@ -25,9 +15,9 @@ class Singleton2 private constructor() {
 
 fun main(args: Array<String>) {
 
-    val obj1 = Singleton2.get()
-    val obj2 = Singleton2.get()
+    val obj1 = Singleton2.instance
+    val obj2 = Singleton2.instance
     println (obj1 === obj2)
 
-    Singleton2.get().printlnHelloWorld()
+    Singleton2.instance.printlnHelloWorld()
 }
