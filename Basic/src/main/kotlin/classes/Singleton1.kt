@@ -1,6 +1,7 @@
 package classes
 
 /**
+ * 饿汉模式
  * Created by tony on 2018/8/21.
  */
 object Singleton {
