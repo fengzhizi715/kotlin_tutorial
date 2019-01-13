@@ -83,6 +83,7 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
+|Derived.kt|通过关键字 by 完成委托
 |Delegate.kt|Kotlin 委托模式的演示|在delegates包下
 |DatabaseDelegate|创建 DatabaseDelegate 来管理 User 的属性，并模拟数据库的操作|在delegates包下
 |Lazy.kt| lazy() 函数的演示|
