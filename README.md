@@ -168,9 +168,9 @@ Android 的工程采用 Android Studio3.2 开发，gradle 版本是4.4。
 
 Java 的工程采用 Intellij IDEA 2018.3 社区版开发。
 
-IDEA 采用 Kotlin Plugin 版本 v1.3.10-release-IJ2018.3-1
+IDEA 采用 Kotlin Plugin 版本 v1.3.21-release-IJ2018.3-1
 
-Kotlin 版本 1.3.10
+Kotlin 版本 1.3.21
 
 
 
