@@ -164,7 +164,7 @@ Benchmark 是Java工程，使用IntelliJ Idea打开。
 
 # 开发工具
 
-Android 的工程采用 Android Studio3.2 开发，gradle 版本是4.4。
+Android 的工程采用 Android Studio 3.3.1 开发，gradle 版本是4.4。
 
 Java 的工程采用 Intellij IDEA 2018.3 社区版开发。
 
