@@ -28,6 +28,7 @@ fun main(args: Array<String>) = runBlocking {
 
     println(0)
 
+    // 无论是否调用以下两句，上面两个协程都会运行
     job1.join()
     job2.join()
 }
