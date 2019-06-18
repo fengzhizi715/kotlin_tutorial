@@ -91,6 +91,9 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 |Infix1.kt|在扩展函数中使用中缀表达式|
 |Infix2.kt|在成员函数中使用中缀表达式|
 
+
+### 2.5 范型
+
 ## 三. 实战篇
 
 ### 3.1 Kotlin 整合网络框架
