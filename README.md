@@ -85,7 +85,7 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 |----------|-------------|------|
 |Derived.kt|通过关键字 by 完成委托
 |Delegate.kt|Kotlin 委托模式的演示|在delegates包下
-|DatabaseDelegate|创建 DatabaseDelegate 来管理 User 的属性，并模拟数据库的操作|在delegates包下
+|DatabaseDelegate.kt|创建 DatabaseDelegate 来管理 User 的属性，并模拟数据库的操作|在delegates包下
 |Lazy.kt| lazy() 函数的演示|
 |Invoke.kt|重载 invoke 函数的演示|
 |Infix1.kt|在扩展函数中使用中缀表达式|
@@ -93,6 +93,11 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 
 
 ### 2.5 范型
+
+| 类名      |      用途    |  备注 |
+|----------|-------------|------|
+|Generic1.kt|通过匿名内部类获得泛型信息|在generic包下
+|Generic2.kt|通过反射获得泛型信息|在generic包下
 
 ## 三. 实战篇
 
