@@ -21,11 +21,9 @@ object Generic1 {
         println(typeClass)
 
         if (typeClass is ParameterizedType) {
-            val actualType = typeClass.actualTypeArguments[0]
 
+            val actualType = typeClass.actualTypeArguments[0]
             println(actualType)
-        } else {
-            println("$typeClass is Not ParameterizedType")
         }
     }
 }

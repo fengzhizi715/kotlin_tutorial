@@ -23,8 +23,6 @@ public class Generic1 {
             Type actualType = ((ParameterizedType)typeClass).getActualTypeArguments()[0];
 
             System.out.println(actualType);
-        } else {
-            System.out.println(typeClass + " is Not ParameterizedType");
         }
     }
 }
