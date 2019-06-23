@@ -29,6 +29,4 @@ fun main() {
 
     val dogPrinter = DogPrinter()
     dogPrinter.print(Dog())
-
-    val mutableList = mutableListOf<>()
 }
