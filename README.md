@@ -15,7 +15,7 @@
 
 ## 一. 基础篇
 
-Basic 是Java工程，使用IntelliJ Idea打开。
+Basic 使用 IntelliJ Idea 打开。
 
 ### 1.1 Kotlin 的函数
 
@@ -49,7 +49,7 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 
 ## 二. 进阶篇
 
-Basic 是Java工程，使用IntelliJ Idea打开。
+Basic 使用 IntelliJ Idea 打开。
 
 ### 2.1 高阶函数和Lambda表达式
 
@@ -105,13 +105,13 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 
 ### 3.1 Kotlin 整合网络框架
 
-Retrofit 是Android工程，使用Android Studio打开。
+Retrofit 是 Android 工程，使用 Android Studio 打开。
 
 Retrofit 工程中 app1 和 app2 两个module都可以编译成单独的App。
 
 ### 3.2 Kotlin 整合Dagger
 
-Dagger2是Android工程，使用Android Studio打开。
+Dagger2 是 Android 工程，使用 Android Studio 打开。
 
 Dagger2 工程中 app1、app2 和 app3 三个module都可以编译成单独的App。
 
@@ -119,7 +119,7 @@ Dagger2 工程中 app1、app2 和 app3 三个module都可以编译成单独的Ap
 
 ### 4.1 Kotlin 的DSL及其使用
 
-DSL 是Java工程，使用IntelliJ Idea打开。
+DSL 使用 IntelliJ Idea 打开。
 
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
@@ -132,7 +132,7 @@ DSL 是Java工程，使用IntelliJ Idea打开。
 
 
 ### 4.2 Kotlin 的协程及其使用
-Coroutines1 是Java工程，使用IntelliJ Idea打开。
+Coroutines1 使用 IntelliJ Idea 打开。
 
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
@@ -163,7 +163,7 @@ Coroutines1 是Java工程，使用IntelliJ Idea打开。
 Coroutines2 是Android工程，使用Android Studio打开。
 
 ## 五. 番外篇
-Benchmark 是Java工程，使用IntelliJ Idea打开。
+Benchmark 使用 IntelliJ Idea 打开。
 
 | 类名      |      用途    |  备注 |
 |----------|-------------|------|
