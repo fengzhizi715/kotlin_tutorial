@@ -98,6 +98,8 @@ Basic 是Java工程，使用IntelliJ Idea打开。
 |----------|-------------|------|
 |Generic1.kt|通过匿名内部类获得泛型信息|在generic包下
 |Generic2.kt|通过反射获得泛型信息|在generic包下
+|Generic3.kt|Kotlin 协变的演示|在generic包下
+|Generic4.kt|Kotlin 逆变的演示|在generic包下
 
 ## 三. 实战篇
 
