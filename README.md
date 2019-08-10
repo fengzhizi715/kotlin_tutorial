@@ -44,7 +44,8 @@ Basic 使用 IntelliJ Idea 打开。
 |Singleton1.kt|使用对象声明实现单例模式|在classes包下
 |Singleton2.kt|使用伴生对象实现单例模式|在classes包下
 |CompanionObject.kt|伴生对象的演示|在classes包下
-|DataClass.kt|数据类的演示|在classes包下
+|DataClass1.kt|数据类的演示|在classes包下
+|DataClass2.kt|数据类继承抽象类|在classes包下
 |SealedClass.kt|密封类的演示|在classes包下
 
 ## 二. 进阶篇
