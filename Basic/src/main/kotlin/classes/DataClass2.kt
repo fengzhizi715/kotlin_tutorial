@@ -13,7 +13,7 @@ data class PingMsg(override var action:String="ping"):Message()
 
 data class PongMsg(override var action:String="pong"):Message()
 
-data class AskMsg(override var action:String="change_color",val body:Map<String,String>):Message()
+data class AskMsg(override var action:String="ask",val body:Map<String,String>):Message()
 
 fun main() {
     val gson = Gson()
