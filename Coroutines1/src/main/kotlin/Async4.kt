@@ -8,7 +8,7 @@ fun main() {
 
     GlobalScope.launch {
 
-        val  result = async(start= CoroutineStart.LAZY){
+        val  result = async{
 
             delay(2000)
             1
