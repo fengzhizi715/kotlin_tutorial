@@ -141,6 +141,7 @@ Coroutines1 使用 IntelliJ Idea 打开。
 |Async1.kt|使用 async 的 hello world 版本|
 |Async2.kt|使用 async 创建的协程拥有返回值|
 |Async3.kt|使用 async 的 start 参数用于指定的协程何时开始|
+|Async4.kt|使用 invokeOnCompletion 函数对 async 的执行结果进行回调|
 |RunBlocking.kt|使用 runBlocking 的 hello world 版本|
 |Delay.kt|挂起函数 delay() 的使用|
 |Yield.kt|挂起函数 yield() 的使用|
