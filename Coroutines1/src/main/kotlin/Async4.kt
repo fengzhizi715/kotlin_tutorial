@@ -18,7 +18,7 @@ fun main() {
 
             if (it!=null){
 
-                println(it.message)
+                println("exception: ${it.message}")
             } else {
 
                 println("result is complete")
