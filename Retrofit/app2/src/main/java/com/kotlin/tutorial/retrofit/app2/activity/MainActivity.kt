@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.kotlin.tutorial.retrofit.app2.R
 import com.kotlin.tutorial.retrofit.app2.config.Constant
-import com.kotlin.tutorial.retrofit.app2.extension.errorReturn
 import com.kotlin.tutorial.retrofit.app2.http.RetrofitManager
 import com.kotlin.tutorial.retrofit.app2.model.PM25Model
 import com.kotlin.tutorial.retrofit.app2.model.SO2Model
@@ -102,5 +101,11 @@ class MainActivity : AppCompatActivity() {
 
             println(it.message)
         })
+    }
+
+    fun <T> Maybe<T>.errorReturn(defValue:T): Maybe<T> = this.onErrorReturn {
+
+        it -> it.printStackTrace()
+        return@onErrorReturn defValue
     }
 }
