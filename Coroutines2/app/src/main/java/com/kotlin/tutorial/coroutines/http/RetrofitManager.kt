@@ -1,6 +1,5 @@
 package com.kotlin.tutorial.coroutines.http
 
-
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.kotlin.tutorial.coroutines.api.APIService
 import com.safframework.http.interceptor.LoggingInterceptor
@@ -41,6 +40,7 @@ class RetrofitManager private constructor() {
                 .requestTag("Request")
                 .response()
                 .responseTag("Response")
+                .printThreadName(false)
                 .build()
 
         //设置拦截器
