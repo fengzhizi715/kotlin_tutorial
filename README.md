@@ -176,11 +176,11 @@ Benchmark 使用 IntelliJ Idea 打开。
 
 # 开发工具
 
-Android 的工程采用 Android Studio 3.3.1 开发，gradle 版本是4.4。
+Android 的工程采用 Android Studio 3.5 开发，gradle 版本是4.4。
 
 Java 的工程采用 Intellij IDEA 2019.1.4 社区版开发。
 
-Kotlin 版本 1.3.41
+Kotlin 版本 1.3.50
 
 
 
