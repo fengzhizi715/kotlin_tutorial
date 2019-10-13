@@ -146,6 +146,7 @@ Coroutines1 使用 IntelliJ Idea 打开。
 |Delay.kt|挂起函数 delay() 的使用|
 |Yield.kt|挂起函数 yield() 的使用|
 |WithContext.kt|挂起函数 withContext 的使用|
+|NonCancellable.kt| NonCancellable 的使用 |
 |CoroutineScope.kt|挂起函数 coroutineScope 的使用|
 |CoroutineDispatchers1.kt|创建多个协程并使用不同的协程调度器|
 |CoroutineDispatchers2.kt|在使用 Unconfined 的协程，在 delay 前后，并没有运行在同一线程中。|
