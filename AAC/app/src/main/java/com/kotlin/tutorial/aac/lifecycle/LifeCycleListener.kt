@@ -1,9 +1,9 @@
 package com.kotlin.tutorial.aac.lifecycle
 
-import android.arch.lifecycle.LifecycleObserver
 import android.util.Log
-import android.arch.lifecycle.Lifecycle
-import android.arch.lifecycle.OnLifecycleEvent
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleObserver
+import androidx.lifecycle.OnLifecycleEvent
 
 
 /**

@@ -1,10 +1,10 @@
 package com.kotlin.tutorial.aac.activity
 
 import android.app.Activity
-import android.arch.lifecycle.Lifecycle
-import android.arch.lifecycle.LifecycleOwner
 import android.os.Bundle
-import android.arch.lifecycle.LifecycleRegistry
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.LifecycleRegistry
 import com.kotlin.tutorial.aac.lifecycle.LifeCycleListener
 
 

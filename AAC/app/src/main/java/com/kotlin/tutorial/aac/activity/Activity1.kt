@@ -1,7 +1,7 @@
 package com.kotlin.tutorial.aac.activity
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.kotlin.tutorial.aac.lifecycle.LifeCycleListener
 
 /**
