@@ -32,5 +32,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,Activity2::class.java)
             startActivity(intent)
         }
+
+        text3.setOnClickListener {
+
+            val intent = Intent(this,Activity3::class.java)
+            startActivity(intent)
+        }
     }
 }
