@@ -50,5 +50,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,Activity5::class.java)
             startActivity(intent)
         }
+
+        text6.setOnClickListener {
+
+            val intent = Intent(this,Activity6::class.java)
+            startActivity(intent)
+        }
     }
 }
