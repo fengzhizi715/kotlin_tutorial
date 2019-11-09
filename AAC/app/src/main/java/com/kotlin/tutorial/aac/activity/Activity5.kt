@@ -1,33 +1,32 @@
 package com.kotlin.tutorial.aac.activity
 
-
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import com.kotlin.tutorial.aac.R
+import com.kotlin.tutorial.aac.delegate.viewModelDelegate
 import com.kotlin.tutorial.aac.viewmodel.FruitViewModel
 import kotlinx.android.synthetic.main.activity_4.*
 
 /**
  *
  * @FileName:
- *          com.kotlin.tutorial.aac.activity.Activity4
+ *          com.kotlin.tutorial.aac.activity.Activity5
  * @author: Tony Shen
- * @date: 2019-11-09 11:53
+ * @date: 2019-11-09 12:46
  * @version: V1.0 <描述当前版本功能>
  */
-class Activity4: AppCompatActivity() {
+class Activity5: AppCompatActivity() {
+
+    private val viewModel by viewModelDelegate(FruitViewModel::class)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_4)
 
         this.progressbar.visibility = View.VISIBLE
-
-        val viewModel: FruitViewModel = ViewModelProviders.of(this).get(FruitViewModel::class.java)
 
         viewModel.getFruitList().observe(this, Observer {
 
