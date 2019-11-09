@@ -33,31 +33,32 @@ class Activity6: AppCompatActivity() {
         val usersLiveData = userDao.getAll()
 
         val observer = Observer<List<User>> { userList ->
-            toast("Count=${userList.count()}")
+
+            Log.i(TAG,"Count=${userList.count()}")
             userList.forEach {
                 val msg = "$it (id=${it.id})"
-                Log.i(TAG, "$it (id=${it.id})")
+                Log.i(TAG, msg)
             }
         }
 
         observe.setOnClickListener {
-            toast("OBSERVE")
+            toast("observe")
             usersLiveData.observe(this, observer)
         }
 
         unobserve.setOnClickListener {
-            toast("UNOBSERVE")
+            toast("unobserve")
             usersLiveData.removeObserver(observer)
         }
 
         add.setOnClickListener {
-            toast("ADD")
+            toast("add")
             val userCount = userDao.getCount()
             userDao.insert(User("User ${userCount + 1}"))
         }
 
         delete.setOnClickListener {
-            toast("DELETE")
+            toast("delete")
             userDao.deleteAll()
         }
     }
