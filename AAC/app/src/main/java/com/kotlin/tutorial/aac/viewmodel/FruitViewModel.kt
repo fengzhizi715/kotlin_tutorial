@@ -33,20 +33,23 @@ class FruitViewModel: ViewModel() {
         return fruitList as LiveData<List<String>>
     }
 
+    /**
+     * 模拟网络请求，延迟2.5s
+     */
     private fun loadFruits(){
         handler.postDelayed({
-            val fruitsStringList = ArrayList<String>()
-            fruitsStringList.add("Mango")
-            fruitsStringList.add("Apple")
-            fruitsStringList.add("Orange")
-            fruitsStringList.add("Banana")
-            fruitsStringList.add("Grapes")
+            val list = ArrayList<String>()
+            list.add("Apple")
+            list.add("Banana")
+            list.add("Orange")
+            list.add("Pear")
+            list.add("Watermelon")
 
             fruitList?.let {
 
-                it.value = fruitsStringList
+                it.value = list
             }
-        }, 5000)
+        }, 2500)
     }
 
     companion object {

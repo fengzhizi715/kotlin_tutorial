@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.kotlin.tutorial.aac.R
@@ -23,21 +21,9 @@ import kotlinx.android.synthetic.main.activity_4.*
  */
 class Activity4: AppCompatActivity() {
 
-    private val fullname = MutableLiveData<String>()
-
-    // Called on app launch
-    fun initNetworkRequest() {
-        // expensive operation, e.g. network request
-        fullname.value = "Andriiginting"
-    }
-    fun getFullname(): LiveData<String> {
-        return fullname
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_4)
-
 
         this.progressbar.visibility = View.VISIBLE
 
