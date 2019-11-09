@@ -32,9 +32,13 @@ class Activity3: AppCompatActivity() {
         }
 
         data.observe(this, Observer<AtomicInteger> { t ->
-            text.text = "点击次数："+t //更新控件中的数据
-            Log.d("liveData", "数据改变...$t")
+            text.text = "点击次数：$t" //更新控件中的数据
+            Log.d(TAG, "数据改变...$t")
         })
 
+    }
+
+    companion object {
+        private val TAG = Activity3::class.java.simpleName
     }
 }

@@ -28,12 +28,14 @@ class MyLiveData : LiveData<AtomicInteger>() {
 
     override fun setValue(value: AtomicInteger?) {
         super.setValue(value)
-        Log.d(TAG, "setValue...$value")
+        Log.d(TAG, "$value")
     }
 
     fun updateValue(value: AtomicInteger?) {
-        atomicInteger.incrementAndGet()
-        setValue(atomicInteger)
+        value?.let {
+            it.incrementAndGet()
+            setValue(value)
+        }
     }
 
     companion object {
