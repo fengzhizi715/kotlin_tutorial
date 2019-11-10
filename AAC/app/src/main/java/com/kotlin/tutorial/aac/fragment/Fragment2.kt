@@ -30,8 +30,8 @@ class Fragment2 : Fragment() {
     ): View? {
         val v = inflater.inflate(R.layout.fragment_2, container, false)
 
-        v.button_ok.setOnClickListener {
-            viewModel.setText(edit_text.text.toString())
+        v.button.setOnClickListener {
+            viewModel.setText(edit.text.toString())
         }
 
         return v
@@ -41,7 +41,7 @@ class Fragment2 : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         viewModel.getText().observe(viewLifecycleOwner, Observer {
-            text -> edit_text.setText(text)
+            text -> edit.setText(text)
         })
     }
 }
