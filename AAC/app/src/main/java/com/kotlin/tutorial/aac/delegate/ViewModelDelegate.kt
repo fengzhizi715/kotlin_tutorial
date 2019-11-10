@@ -40,3 +40,5 @@ class ViewModelDelegate<out T : ViewModel>(private val clazz: KClass<T>, private
 }
 
 fun <T : ViewModel> AppCompatActivity.viewModelDelegate(clazz: KClass<T>) = ViewModelDelegate(clazz, true)
+
+fun <T : ViewModel> Fragment.viewModelDelegate(clazz: KClass<T>, fromActivity: Boolean = true) = ViewModelDelegate(clazz, fromActivity)
