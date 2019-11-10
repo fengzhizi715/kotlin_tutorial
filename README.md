@@ -116,6 +116,10 @@ Dagger2 是 Android 工程，使用 Android Studio 打开。
 
 Dagger2 工程中 app1、app2 和 app3 三个module都可以编译成单独的App。
 
+### 3.3 Kotlin 整合Android Architecture Components
+
+AAC 是 Android 工程，使用 Android Studio 打开。
+
 ## 四. 扩展学习篇
 
 ### 4.1 Kotlin 的DSL及其使用
