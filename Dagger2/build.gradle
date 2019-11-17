@@ -15,17 +15,17 @@ ext {
             dagger                    : "2.16",
 
             rxandroid                 : "2.0.1",
-            rxjava                    : "2.1.14",
+            rxjava                    : "2.2.14",
 
             saf_log                   : "1.5.3",
             saf_kotlin_utils          : "0.0.4.5",
             saf_kotlin_ext            : "0.0.3.4",
 
-            tony_common_utils         : "1.2.5"
+            tony_common_utils         : "1.2.6"
     ]
 }
 buildscript {
-    ext.kotlin_version = '1.3.21'
+    ext.kotlin_version = '1.3.50'
     repositories {
         google()
         jcenter()
