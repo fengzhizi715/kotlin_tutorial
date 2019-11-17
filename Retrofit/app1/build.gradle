@@ -51,5 +51,5 @@ dependencies {
     implementation "com.safframework.utils:saf-kotlin-ext:${libs.saf_kotlin_ext}"
     implementation "com.safframework.utils:saf-kotlin-utils:${libs.saf_kotlin_utils}"
 
-    implementation 'com.safframework.log:saf-log-core:2.0.0'
+    implementation "com.safframework.log:saf-log-core:${libs.saf_log}"
 }
