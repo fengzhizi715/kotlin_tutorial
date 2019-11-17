@@ -44,5 +44,5 @@ dependencies {
     kapt "com.google.dagger:dagger-compiler:$libs.dagger"
     kapt "com.google.dagger:dagger-android-processor:$libs.dagger"
 
-    implementation "com.safframework.log:saf-log:${libs.saf_log}"
+    implementation "com.safframework.log:saf-log-core:${libs.saf_log}"
 }

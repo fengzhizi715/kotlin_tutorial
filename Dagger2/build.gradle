@@ -17,7 +17,7 @@ ext {
             rxandroid                 : "2.0.1",
             rxjava                    : "2.2.14",
 
-            saf_log                   : "1.5.3",
+            saf_log                   : "2.2.1",
             saf_kotlin_utils          : "0.0.4.5",
             saf_kotlin_ext            : "0.0.3.4",
 
