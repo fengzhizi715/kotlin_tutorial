@@ -19,7 +19,7 @@ ext {
             okhttp3                   : "4.2.0",
             gson                      : "2.8.5",
 
-            saf_log                   : "2.1.3",
+            saf_log                   : "2.2.1",
             saf_logginginterceptor    : "1.4.5",
             saf_kotlin_utils          : "0.1.1",
             saf_kotlin_ext            : "0.1.1",
