@@ -33,10 +33,7 @@ class Demo4ProviderInjectActivity : AppCompatActivity() {
 
             userProvider?.let {
 
-                it?.let {
-
-                    list.add(it.get())
-                }
+                list.add(it.get())
             }
         }
 
