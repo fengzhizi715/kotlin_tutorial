@@ -18,7 +18,7 @@
         </activity>
 
         <activity
-            android:name=".activity.Demo4ModuleIncludeAtivity"
+            android:name=".activity.Demo4ModuleIncludeActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"/>
     </application>

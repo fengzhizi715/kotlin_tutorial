@@ -10,12 +10,12 @@ import javax.inject.Inject
 /**
  *
  * @FileName:
- *          com.kotlin.tutorial.dagger2.app3.activity.Demo4ModuleIncludeAtivity.kt
+ *          com.kotlin.tutorial.dagger2.app3.activity.Demo4ModuleIncludeActivity.kt
  * @author: Tony Shen
  * @date: 2018-08-23 19:03
  * @version: V1.0 <描述当前版本功能>
  */
-class Demo4ModuleIncludeAtivity : AppCompatActivity() {
+class Demo4ModuleIncludeActivity : AppCompatActivity() {
 
     @Inject
     lateinit var address: Address

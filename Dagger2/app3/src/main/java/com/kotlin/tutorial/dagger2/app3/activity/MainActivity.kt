@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         text1.setOnClickListener {
 
-            val intent = Intent(this,Demo4ModuleIncludeAtivity::class.java)
+            val intent = Intent(this,Demo4ModuleIncludeActivity::class.java)
             startActivity(intent)
         }
     }

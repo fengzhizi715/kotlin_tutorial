@@ -1,6 +1,6 @@
 package com.kotlin.tutorial.dagger2.app3.di.component
 
-import com.kotlin.tutorial.dagger2.app3.activity.Demo4ModuleIncludeAtivity
+import com.kotlin.tutorial.dagger2.app3.activity.Demo4ModuleIncludeActivity
 import com.kotlin.tutorial.dagger2.app3.di.module.AddressModule
 import dagger.Component
 
@@ -15,5 +15,5 @@ import dagger.Component
 @Component(modules = arrayOf(AddressModule::class))
 interface AddressComponent {
 
-    fun inject(activity: Demo4ModuleIncludeAtivity)
+    fun inject(activity: Demo4ModuleIncludeActivity)
 }
