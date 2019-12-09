@@ -3,7 +3,8 @@ package com.kotlin.tutorial.dagger2.app3.activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-import com.kotlin.tutorial.dagger2.app3.di.component.DaggerAddressComponent
+import com.kotlin.tutorial.dagger2.app3.di.component.DaggerAddressComponent1
+
 import com.kotlin.tutorial.dagger2.app3.domain.Address
 import javax.inject.Inject
 
@@ -23,7 +24,7 @@ class Demo4ModuleIncludeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        DaggerAddressComponent.create().inject(this)
+        DaggerAddressComponent1.create().inject(this)
 
         Toast.makeText(this,address.toString(), Toast.LENGTH_LONG).show()
     }

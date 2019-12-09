@@ -14,7 +14,7 @@ import dagger.Provides
  * @version V1.0 <描述当前版本功能>
  */
 @Module(includes = arrayOf(StreetModule::class))
-class AddressModule {
+class AddressModule1 {
 
     @Provides
     fun provideAddress(street: Street) = Address(street)
