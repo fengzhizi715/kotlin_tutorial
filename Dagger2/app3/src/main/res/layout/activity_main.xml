@@ -20,6 +20,6 @@
         android:layout_margin="10dp"
         android:background="@drawable/textview_border"
         android:gravity="center"
-        android:text="module 使用 dependencies"/>
+        android:text="component 使用 dependencies"/>
 
 </LinearLayout>
