@@ -3,7 +3,6 @@ package com.kotlin.tutorial.dagger2.app3.di.component
 import com.kotlin.tutorial.dagger2.app3.di.module.StreetModule
 import com.kotlin.tutorial.dagger2.app3.domain.Street
 import dagger.Component
-import javax.inject.Singleton
 
 /**
  *

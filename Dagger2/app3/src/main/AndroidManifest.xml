@@ -23,7 +23,7 @@
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".activity.Demo4ModuleDependenciesActivity"
+            android:name=".activity.Demo4ComponentDependenciesActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"/>
     </application>

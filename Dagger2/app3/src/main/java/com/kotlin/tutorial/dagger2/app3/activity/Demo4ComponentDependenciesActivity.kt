@@ -3,7 +3,6 @@ package com.kotlin.tutorial.dagger2.app3.activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-import com.kotlin.tutorial.dagger2.app3.di.component.DaggerAddressComponent1
 import com.kotlin.tutorial.dagger2.app3.di.component.DaggerAddressComponent2
 import com.kotlin.tutorial.dagger2.app3.di.component.DaggerStreetComponent2
 import com.kotlin.tutorial.dagger2.app3.domain.Address
@@ -17,7 +16,7 @@ import javax.inject.Inject
  * @date: 2019-12-27 01:23
  * @version: V1.0 <描述当前版本功能>
  */
-class Demo4ModuleDependenciesActivity: AppCompatActivity() {
+class Demo4ComponentDependenciesActivity: AppCompatActivity() {
 
     @Inject
     lateinit var address: Address
