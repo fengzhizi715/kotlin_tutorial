@@ -179,6 +179,10 @@ Benchmark 使用 IntelliJ Idea 打开。
 |CoroutinesBenchmark.kt|使用RxJava2和Coroutines的性能比较|
 
 
+最后一节的例子：https://github.com/fengzhizi715/NetDiagnose
+使用 Kotlin + LiveData + MVVM + Coroutines 开发的 App，用于判断 Android 系统是否网络通顺、提供 TCP、WebSocket 的客户端，便于通讯调试。
+
+
 # 开发工具
 
 Android 的工程采用 Android Studio 3.5 开发，gradle 版本是4.4。
